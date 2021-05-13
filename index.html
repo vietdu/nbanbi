@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parallax responsive landing page</title>
+
+        <link rel="stylesheet" href="scss/styles.css">
+
+        <!-- ICONS BOXICONS -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+
+        </style>
+
+    </head>
+
+        <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Coffee</a>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+            <main>
+                <!-- ===== HOME =====-->
+                <div class="home">
+                    <div class="parallax home__parallax home__parallax-img1" data-rellax-speed="-19" ></div>
+                    <div class="parallax home__parallax home__parallax-img2" data-rellax-speed="-18" ></div>
+                    <div class="parallax home__parallax home__parallax-img3" data-rellax-speed="-16" ></div>
+                 
+                    <div class="parallax home__parallax home__parallax-img4" data-rellax-speed="-13" ></div>
+                    <div class="parallax home__parallax home__parallax-img5" data-rellax-speed="-7" ></div>
+                    <div class="parallax home__parallax home__parallax-img6" data-rellax-speed="-20" ></div>
+                    <div class="parallax home__parallax home__parallax-img7" data-rellax-speed="-15" ></div>
+
+                  <!-- <div class="parallax home__parallax home__parallax-img2" data-rellax-speed="-18" data-speed=2 class="move"></div>-->
+                
+
+                    <h1 class="parallax home__title" data-rellax-speed="-8"  >Fansipan</h1>
+                    
+    
+
+                </div>
+  
+    
+                          <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="perfil.png" alt="" class="vietdu" data-speed=2>
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">I'am Jhon Doe</h2>
+                        <span class="about__profession">Web designer</span>
+                        <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
+
+                        <div class="about__social">
+                            <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="#" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                            <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+              <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">nbanbi@mail.com</span>
+
+                        <h3 class="contact__subtitle">Dien Thoai</h3>
+                        <span class="contact__text">+84 92 142 292</span>
+
+                        <h3 class="contact__subtitle">Dia Chi</h3>
+                        <span class="contact__text">Quoc Gia</span>
+            
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Enviar" class="contact__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+           
+    
+            <!-- RELLAX JS -->
+            <script src="assets/js/rellax.min.js"></script>
+    
+            <!-- GSAP -->
+            <script src="assets/js/ajax.min.js"></script>
+    
+            <!-- SCROLL REVEAL -->
+            <script src="assets/js/scrollreveal.js"></script>
+    
+            <!-- MAIN JS -->
+            <script src="assets/js/main.js"></script>
+
+                      
+
+    </body>
+</html>

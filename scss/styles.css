@@ -67,7 +67,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+html{
+  overflow-x:hidden;
+}
 body {
   margin: var(--header-height) 0 0 0;
   padding: 0;
@@ -136,6 +138,8 @@ img {
 
 @media screen and (max-width: 2000px) {
   .nav__menu {
+    overflow-y: auto;
+    overflow-x: hidden;
     position: fixed;
     top: 0;
     right: -100%;
@@ -254,6 +258,7 @@ img {
 .home__title {
   font-size: var(--biggest-font-size);
   z-index: var(--z-normal);
+  color:#c1c9da;
 
 }
 
@@ -874,11 +879,16 @@ display: none;
 
 
 @media screen and (max-width: 1000px) {
+  .home__parallax-img5 {
+    background-image: url("anh51.png");
+    z-index: var(--z-fixed);
+  }
+
   
- .nav__menu{
-   overflow-x: auto;
-   overflow-y: hidden;
- }
+  .home__title {
+
+
+  }
  
   .banner {
     height: auto;
@@ -897,7 +907,9 @@ display: none;
    height:500px;
  }
 .home__title{
-  top:45%;
+  top:30%;
+  left:54%;
+
 }
   
   .block-content {
@@ -1163,6 +1175,3 @@ color:#3948b1;
   color:yellowgreen;
 }
 
-html{
-  overflow-x:hidden;
-}

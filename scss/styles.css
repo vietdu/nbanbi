@@ -145,7 +145,7 @@ img {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 380px;
+    width: 400px;
     height: 100%;
     padding: 3.5rem 1.5rem 0;
     background: rgba(255, 255, 255, 0.3);
@@ -885,7 +885,9 @@ display: none;
     background-image: url("anh51.png");
     z-index: var(--z-fixed);
   }
-
+.nav__menu{
+  width: 340px;
+}
   
   .home__title {
 
@@ -1077,7 +1079,7 @@ color:#3948b1;
   background-color: none;
 }
 .form{
-  width: 360px;
+  width: 320px;
   padding: 4rem 2rem;
   border-radius: 1rem;
   margin-top: -4%;

@@ -1162,3 +1162,7 @@ color:#3948b1;
 .out:hover{
   color:yellowgreen;
 }
+
+html{
+  overflow-x:hidden;
+}

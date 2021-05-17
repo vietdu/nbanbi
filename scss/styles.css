@@ -139,7 +139,7 @@ img {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 360px;
+    width: 380px;
     height: 100%;
     padding: 3.5rem 1.5rem 0;
     background: rgba(255, 255, 255, 0.3);
@@ -875,7 +875,9 @@ display: none;
 
 @media screen and (max-width: 1000px) {
   
- 
+ .nav__menu{
+   overflow-x: auto;
+ }
  
   .banner {
     height: auto;

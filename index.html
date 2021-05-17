@@ -9,113 +9,643 @@
 
         <!-- ICONS BOXICONS -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <style>
-
-        </style>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css ' rel='stylesheet'>
+  
 
     </head>
 
         <body>
         <!--===== HEADER =====-->
+
         <header class="l-header">
             <nav class="nav bd-grid">
+   
                 <div>
-                    <a href="#" class="nav__logo">Coffee</a>
+                    <a href="#" class="nav__logo"><i class='bx bx-home-circle'></i></i></a>
+                </div>
+               
                 </div>
                 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
+                
 
                 <div class="nav__menu" id="nav-menu">
+                     <div>
+                  
                     <div class="nav__close" id="nav-close">
-                        <i class='bx bx-x'></i>
+                        <i class='bx bx-right-arrow'></i>
                     </div>
 
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Blog</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a style="text-decoration: none" href="#" class="nav__link active"><i class='bx bx-home-circle'></i> Home</a></li>
+                        <li class="nav__item" style="cursor: pointer;"><a style="text-decoration: none"  class="nav__link" id="dangnhap1"><i class='bx bxs-group'></i> Account</a></li>
+                        <li class="nav__item"><a  style="text-decoration: none" href="#Booking" class="nav__link"><i class='bx bxs-plane' ></i> Booking</a></li>
+                        
+                        <li class="nav__item"><a style="text-decoration: none" href="#yasuo" class="nav__link"><i class='bx bx-heart-circle'></i> About</a></li>
                     </ul>
                 </div>
+                <form action="" class="form" id="dangnhap-menu">
+                    <div class="form__out">
+                        <a style="cursor: pointer;" id="out"><i class='bx bx-x out'></i></a>                        
+                     </div>
+                    <div class="form__div">
+                
+                        <input type="text" class="form__input" placeholder=" ">
+                        <label for="" class="form__label">Tên ID</label>
+                    </div>
+    
+                    <div class="form__div">
+                        <input type="password" class="form__input" placeholder=" ">
+                        <label for="" class="form__label">Mật khẩu</label>
+                    </div>
+    
+                  
+                    
+                  <a style="cursor: pointer;font-size: 28px;color:#c1c9da;padding-left: 5x;" id="dangnhap">        <i class='bx bx-log-in'></i></a> </br>
+                
+                   
+                    <a style="cursor: pointer;font-size: 28px;color:#c1c9da;padding-left: 6px;" id="dangnhap2">    <i class='bx bx-user-plus'></i></i></a> 
+                </form>
+                <form action="" class="form dangky" id="dangky-menu">
+                    
+                    <div class="form__out">
+                        <a style="cursor: pointer;" id="out1"><i class='bx bx-x out'></i></a>                        
+                     </div>
+                    <div class="form__div">
+                    
+                        <input type="text" class="form__input" placeholder=" ">
+                        <label for="" class="form__label">Email</label>
+                    </div>
+                    <div class="form__div">
+                        <input type="text" class="form__input" placeholder=" ">
+                        <label for="" class="form__label">Số điện thoại</label>
+                    </div>
+                    <div class="form__div">
+                        <input type="text" class="form__input" placeholder=" ">
+                        <label for="" class="form__label">Tên ID</label>
+                    </div>
+    
+                    <div class="form__div">
+                        <input type="password" class="form__input" placeholder=" ">
+                        <label for="" class="form__label">Mật khẩu</label>
+                    </div>
+    
+                  
+                    <a style="cursor: pointer;font-size: 28px;color:#c1c9da;padding-left: 6px;" id="dangnhap3">  <i class='bx bx-user-check'></i></i></a> 
+                   
+                </form>
             </nav>
         </header>
+
     
             <main>
                 <!-- ===== HOME =====-->
                 <div class="home">
-                    <div class="parallax home__parallax home__parallax-img1" data-rellax-speed="-19" ></div>
+                    <div class="parallax home__parallax home__parallax-img1" data-rellax-speed="-19" >
+                    </div>
                     <div class="parallax home__parallax home__parallax-img2" data-rellax-speed="-18" ></div>
                     <div class="parallax home__parallax home__parallax-img3" data-rellax-speed="-16" ></div>
                  
-                    <div class="parallax home__parallax home__parallax-img4" data-rellax-speed="-13" ></div>
-                    <div class="parallax home__parallax home__parallax-img5" data-rellax-speed="-7" ></div>
-                    <div class="parallax home__parallax home__parallax-img6" data-rellax-speed="-20" ></div>
-                    <div class="parallax home__parallax home__parallax-img7" data-rellax-speed="-15" ></div>
+                    <div class="parallax home__parallax home__parallax-img4" data-rellax-speed="-13" >
+                       
+                    </div>
+                    <div class="parallax home__parallax home__parallax-img5" data-rellax-speed="-7.9" >
+
+                    </div>
+            
+             
+          
 
                   <!-- <div class="parallax home__parallax home__parallax-img2" data-rellax-speed="-18" data-speed=2 class="move"></div>-->
                 
 
-                    <h1 class="parallax home__title" data-rellax-speed="-8"  >Fansipan</h1>
+                    <h1 class="parallax home__title" data-rellax-speed="-6.9"  >GL travel </h1>
+                   
+                    
                     
     
 
                 </div>
-  
-    
-                          <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="perfil.png" alt="" class="vietdu" data-speed=2>
-                    </div>
 
-                    <div>
-                        <h2 class="about__subtitle">I'am Jhon Doe</h2>
-                        <span class="about__profession">Web designer</span>
-                        <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
+                                          <!--===== ABOUT =====-->
+                                          <section class="container contact section header2" id="Booking" >
+                                              
+                                              <div class="bout__container bd-grid " id="myheader2" >
+                                            <div class="wrapper bg-white "  >
+                                                <form action="#">
+                                                  
+                                                    <div class="d-sm-flex margin border-bottom">
+                                                        <div>
+                                                            <img src="maybay.png" alt="" class="vietdu" data-speed=3>
+                                                            
+                                                        </div>
+                                                        <div class="d-flex p-2 align-items-center flex-fill ms-sm-1 my-sm-0 my-1 position-relative"> <input type="text" required placeholder="From" class="form-control">
+                                                            <div class="label" id="from"></div> <span class="fas fa-dot-circle text-muted"></span>
+                                                        </div>
+                                                        <div class="d-flex p-2 align-items-center flex-fill ms-sm-1 my-sm-0 my-1   position-relative"> <input type="text" required placeholder="To" class="form-control">
+                                                            <div class="label" id="to"></div> <span class="fas fa-map-marker text-muted"></span>
+                                                        </div>
+                                            
+                                                        <div class="d-flex p-2 align-items-center flex-fill ms-sm-1 my-sm-0 my-1  position-relative "> <input type="date" required placeholder="mm/dd/yyyy" class="form-control">
+                                                            <div class="label" id="depart"></div>
+                                                        </div>
+                                                        <div class="d-flex p-2 align-items-center flex-fill ms-sm-1 my-sm-0 my-1 position-relative "> <input type="date" required placeholder="Return Date" class="form-control">
+                                                            <div class="label" id="return"></div>
+                                                        </div>
+                                                   
+                                                    <div class="form-group my-2 ">
+                                            
+                                                        <button type="button" class="btn  d-flex justify-content-center text-center  p-3 search" onclick="myFunction1()" ><i class='bx bx-search-alt-2 search'></i></button>          </div>                                              
+                                                    </form>
+                                               
+                                            </div>
+                                        </div>
 
-                        <div class="about__social">
-                            <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="#" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                            <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                                        </section>
+
+                <!--===== CONTACT =====-->
+                <section class="khoangtrang" id="khoangtrang" >
+                </br>
+            </br>
+        </br>
+    </br>
+</br>
+
+                        <h2  style="color: #d5d6d8;" ><i class='bx bx-search-alt-2'></i><i>  ...or...  </i><i class='bx bx-chevrons-down' ></i></h2>
+                    
+              
+                    </section>
+     
+            <section class="container bannery  banner1 " id="banner_id1" >
+                
+                <div class="quan">
+                    <div class="grid wide container">
+                              <div class="prolayer-fly" >
+                             <div class="prolayer3">              
+                             <img src="slide.jpg" width="40" height="10" alt="">
+                            </div>
+                            <div class="block-content">
+                            <div class="prolay-full" style="display: flex;">
+                            <div class="prolayze" title="8:40 AM on SAT, MAY 29 ">
+                                <b>8:40 PM - 9:55 PM</b><br>
+                                <p>Vietjet Air~FlexFlight</p>
+                            </div>
+                            <div class="list-fly">
+                                <h6 style="color: black;">1hr 15 min</h6>
+                                <p>DAD-HAN</p>
+                            </div>
+                            <div class="list-skyline">
+                                <h6 style="color: black;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                            </div>
+                            <div class="list-money">
+                                <h6 style="color: black;">₫1.505.000 </h6>
+                                <p>round trip</p>
+                            </div>
                         </div>
+                              <div class="content-sp" style="display: none;">
+                                <div class="content">
+                                          <p>DAD-HAN</p>
+                                          <p>round trip</p>
+                                </div>
+                                <div class="content">
+                                    <h6 style="color: black;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                                      <h6 style="color: black;">1hr 15 min</h6>
+                                      <p>Vietjet Air~FlexFlight</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            </div>
+
+                            </div>
+                        
+                       <hr>
+                       <div class="grid wide container">
+                        <div class="prolayer-fly" >
+                       <div class="prolayer3">              
+                       <img src="slidep.png" width="40" height="10" alt="">
+                      </div>
+                      <div class="block-content">
+                  <div class="prolay-full" style="display: flex;">
+                      <div class="prolayze" title="8:40 AM on SAT, MAY 29 ">
+                          <b>4:35 PM - 5:55 PM</b><br>
+                          <p>Vietnam Airline</p>
+                      </div>
+                      <div class="list-fly">
+                          <h6 style="color: black;">1hr 20 min</h6>
+                          <p>DAD-HAN</p>
+                      </div>
+                      <div class="list-skyline">
+                          <h6 style="color: black;">&nbsp;&nbsp;Nonstop</h6>
+                      </div>
+                      <div class="list-money">
+                          <h6 style="color: black;">₫2.505.000 </h6>
+                          <p>round trip</p>
+                      </div>
+                  </div>
+                  <div class="content-sp" style="display: none;">
+                    <div class="content">
+                              <p>DAD-HAN</p>
+                              <p>round trip</p>
                     </div>
+                    <div class="content">
+                        <h6 style="color: black;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                          <h6 style="color: black;">1hr 20 min</h6>
+                          <p>Vietnam Airline</p>
+                    </div>
+                  </div>
+                </div>
+                      </div>
+                      </div>
+                  
+                 <hr>
+                 <div class="grid wide container">
+                    <div class="prolayer-fly" >
+                   <div class="prolayer3">              
+                   <img src="slidepr.png" width="40" height="10" alt="">
+                  </div>
+                  <div class="block-content">
+              <div class="prolay-full" style="display: flex;">
+                  <div class="prolayze" title="8:40 AM on SAT, MAY 29 ">
+                      <b>7:40 AM - 9:05 AM</b><br>
+                      <p>Bamboo Airways</p>
+                  </div>
+                  <div class="list-fly">
+                      <h6 style="color: black;">1hr 25 min</h6>
+                      <p>DAD-HAN</p>
+                  </div>
+                  <div class="list-skyline">
+                      <h6 style="color: black;">&nbsp;Nonstop</h6>
+                  </div>
+                  <div class="list-money">
+                      <h6 style="color: black;">₫1.575.000 </h6>
+                      <p>round trip</p>
+                  </div>
+              </div>
+               <div class="content-sp" style="display: none;">
+                    <div class="content">
+                              <p>DAD-HAN</p>
+                              <p>round trip</p>
+                    </div>
+                    <div class="content">
+                        <h6 style="color: black;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                          <h6 style="color: black;">1hr 25 min</h6>
+                          <p>Bamboo Airways</p>
+                    </div>
+                  </div>
+              </div>
+                  </div>
+                  </div>
+              
+             <hr>
+             <div class="grid wide container">
+                <div class="prolayer-fly" >
+               <div class="prolayer3">              
+               <img src="slidepro.png" width="40" height="10" alt="">
+              </div>
+              <div class="block-content">
+          <div class="prolay-full" style="display: flex;">
+              <div class="prolayze" title="8:40 AM on SAT, MAY 29 ">
+                  <b>7:40 PM - 9:55 PM</b><br>
+                  <p>VECA</p>
+              </div>
+              <div class="list-fly">
+                  <h6 style="color: black;">1hr 15 min</h6>
+                  <p>DAD-HAN</p>
+              </div>
+              <div class="list-skyline">
+                  <h6 style="color: black;">&nbsp;&nbsp;Nonstop</h6>
+              </div>
+              <div class="list-money">
+                  <h6 style="color: black;">₫1.505.000 </h6>
+                  <p>round trip</p>
+              </div>
+          </div>
+           <div class="content-sp" style="display: none;">
+                    <div class="content">
+                              <p>DAD-HAN</p>
+                              <p>round trip</p>
+                    </div>
+                    <div class="content">
+                        <h6 style="color: black;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                          <h6 style="color: black;">1hr 15 min</h6>
+                          <p>VECA</p>
+                    </div>
+                  </div>
+          </div>
+              </div>
+              </div>
+          
+         <hr>
+         
+      
+     
+     <div class="grid wide container">
+        <div class="prolayer-fly" >
+       <div class="prolayer3">              
+       <img src="slidep.png" width="40" height="10" alt="">
+      </div>
+      <div class="block-content">
+  <div class="prolay-full" style="display: flex;">
+      <div class="prolayze" title="8:40 AM on SAT, MAY 29 ">
+          <b>8:30 PM - 9:55 PM</b><br>
+          <p>Vietnam Airline</p>
+      </div>
+      <div class="list-fly">
+          <h6 style="color: black;">1hr 25 min</h6>
+          <p>DAD-HAN</p>
+      </div>
+      <div class="list-skyline">
+          <h6 style="color: black;">&nbsp;Nonstop</h6>
+      </div>
+      <div class="list-money">
+          <h6 style="color: black;">₫2.235.000 </h6>
+          <p>round trip</p>
+      </div>
+  </div>
+   <div class="content-sp" style="display: none;">
+                    <div class="content">
+                              <p>DAD-HAN</p>
+                              <p>round trip</p>
+                    </div>
+                    <div class="content">
+                        <h6 style="color: black;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                          <h6 style="color: black;">1hr 25 min</h6>
+                          <p>Vietnam Airline</p>
+                    </div>
+                  </div>
+  </div>
+      </div>
+      </div>
+  
+                        <hr>
+                        <div class="grid wide container">
+                        <div class="prolayer-fly" >
+                       <div class="prolayer3">              
+                       <img src="slidepr.png" width="40" height="10" alt="">
+                       </div>
+                       <div class="block-content">
+                       <div class="prolay-full" style="display: flex;">
+                       <div class="prolayze" title="8:40 AM on SAT, MAY 29 ">
+                          <b>2:05 AM - 3:25 AM</b><br>
+                          <p>Bamboo Airways</p>
+                       </div>
+                       <div class="list-fly">
+                          <h6 style="color: black;">1hr 25 min</h6>
+                          <p>DAD-HAN</p>
+                       </div>
+                       <div class="list-skyline">
+                          <h6 style="color: black;">Nonstop</h6>
+                       </div>
+                       <div class="list-money">
+                          <h6 style="color: black;">₫1.500.000 </h6>
+                          <p>round trip</p>
+                       </div>
+                       </div>
+                        <div class="content-sp" style="display: none;">
+                    <div class="content">
+                              <p>DAD-HAN</p>
+                              <p>round trip</p>
+                    </div>
+                    <div class="content">
+                        <h6 style="color: black;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                          <h6 style="color: black;">1hr 20 min</h6>
+                          <p>Bamboo Airways</p>
+                    </div>
+                  </div>
+                       </div>
+                       </div>
+                       </div>
+
+                       <hr>                  
+                       <div class="grid wide container">
+                        <div class="prolayer-fly" >
+                       <div class="prolayer3">              
+                       <img src="slide.jpg" width="40" height="10" alt="">
+                      </div>
+                      <div class="block-content">
+                  <div class="prolay-full" style="display: flex;">
+                      <div class="prolayze" title="8:40 AM on SAT, MAY 29 ">
+                          <b>8:10 PM - 9:25 PM</b><br>
+                          <p>Vietjet Air~FlexFlight</p>
+                      </div>
+                      <div class="list-fly">
+                          <h6 style="color: black;">1hr 15 min</h6>
+                          <p>DAD-HAN</p>
+                      </div>
+                      <div class="list-skyline">
+                          <h6 style="color: black;">&nbsp;Nonstop</h6>
+                      </div>
+                      <div class="list-money">
+                          <h6 style="color: black;">₫2.340.000 </h6>
+                          <p>round trip</p>
+                      </div>
+                  </div>
+                   <div class="content-sp" style="display: none;">
+                    <div class="content">
+                              <p>DAD-HAN</p>
+                              <p>round trip</p>
+                    </div>
+                    <div class="content">
+                        <h6 style="color: black;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                          <h6 style="color: black;">1hr 15 min</h6>
+                          <p>Vietjet Air~FlexFlight</p>
+                    </div>
+                  </div>
+                  </div>
+                      </div>
+                      </div>
+                      </div>
+                  
+                      <div class="baydai">
+                      </br>
+                    </br>
+                </br>
+            </br>
+        </br>
+    </br>
+</br>
+
+                          <h3 style="color: #d5d6d8;">....<i class='bx bx-chevrons-down' style="font-size: 20px;" ></i>....</h3>
+                      </div>
+        
+
+                      
+              
+                   
+                        
+                  
+                    
+                    
+                    
+                          
+            </section>
+            <section class="container banner banner2 " id="banner_id2" >
+                <div class="row form_bn2 " id="boroll_2">
+
+                    <div class="col-sm ">
+                      
+                        <h2>Giảm</h2>
+                        <h1><i>20% GIÁ</i><h1>
+                        <h2>Nếu</h2>
+                        <h2>Bạn tiếp tục đặt vé ở chúng tôi</h2>
+                        <div class="pt-5 coupon"> <i>trong vòng một tháng gần nhất bạn mua</i> </div>
+                        <button class="btn rounded mt-3"><i>Đặt ngay</i></button>
+                  </div>
+              <div class="col-sm ">
+                <img src="banner2.png" alt="" >
+              </div>
+            </div>
+
+            </section>
+            <section class="container banner  banner3 " id="banner_id3" >
+                <div class="row form_bn3">
+                    <div class="col-sm ">
+                        <img src="banner2l.png" alt="" >
+                      </div>
+
+                    <div class="col-sm ">
+                      
+                        <h2>Nếu</h2>
+                        <h1><i>BẠN MUỐN BỨC PHÁ</i><h1>
+                        <h2>Hãy</h2>
+                        <h2>Xách balo lên và đi</h2>
+                        <div class="pt-5 coupon"> <i>chúng tôi luôn ở đây để bạn hạnh phúc</i> </div>
+                        <button class="btn rounded mt-3"><i>Đặt ngay</i></button>
+                  </div>
+
                 </div>
             </section>
-              <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+           
+            <section class="container bannerz "  >
+                <div class="container px-4  ">
+                    <div class="row gx-2">
+                      <div class="col">
+                       <div class="p-1 border dulich bg-light">
 
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">nbanbi@mail.com</span>
+                        <div class="row" >
 
-                        <h3 class="contact__subtitle">Dien Thoai</h3>
-                        <span class="contact__text">+84 92 142 292</span>
+                            <div class="col-sm ">
+                              
+                <h2 style="color:#ebcb98">Hè Này </h2>
+                <h1 style="color:#efa22e;">Đà Lạt</h1>
+                <h3 style="color:#ebcb98">Như Thế Nào Ấy Nhỉ</h3>
+                
+                          </div>
+                      <div class="col-sm ">
+                        <img src="dalat1.png" alt="" >
+                   
+                      </div>
+                    </div>
 
-                        <h3 class="contact__subtitle">Dia Chi</h3>
-                        <span class="contact__text">Quoc Gia</span>
+
+                       </div>
+                      </div>
+                      <div class="col"  >
+                        <div class="col">
+                            <div class="p-1 border dulich bg-light">
+     
+                             <div class="row" >
+     
+                                 <div class="col-sm ">
+                                   
+                                    
+                                    <h2 style="color:#ebcb98">Nhanh Tay </h2>
+                                    <h1 style="color:#efa22e;  cursor: pointer;">Đặt Vé </h1>
+                                    <h3 style="color:#ebcb98">Để Được Nhận Ưu Đãi</h3>
+                               </div>
+                           <div class="col-sm ">
+                             <img src="dalat2.png" alt="" >
+                        
+                           </div>
+                         </div>
+     
+     
+                            </div>
+                           </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        
+            <section class="container  bannerx "  >
+                <div class="container px-4  ">
+                    <div class="row gx-2">
+                      <div class="col">
+                       <div class="p-1 border dulich bg-light">
+
+                        <div class="row" >
+                            <div class="col-sm ">
+                                <img src="danang1.png" alt="" >
+                           
+                              </div>
+
+                            <div class="col-sm ">
+                              
+                                <h2 style="color:#a4c4b9">Mùa Này </h2>
+                                <h1 style="color:#0f515f;">Đà Nẵng</h1>
+                                <h3 style="color:#a4c4b9">Có Gì Cho Ta</h3>
+                          </div>
+                     
             
                     </div>
 
-                    <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div>
 
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                        <input type="submit" value="Enviar" class="contact__button">
-                    </form>
-                </div>
+                       </div>
+                      </div>
+                      <div class="col"  >
+                        <div class="col">
+                            <div class="p-1 border dulich bg-light">
+     
+                             <div class="row" >
+                                <div class="col-sm ">
+                                    <img src="danang2.png" alt="" >
+                               
+                                  </div>
+     
+                                 <div class="col-sm ">
+                                   
+                                    <h2 style="color:#a4c4b9;">Muốn chơi</h2>
+                                    <h1 style="color:#0f515f; cursor: pointer;">Đặt Vé </h1>
+                                    <h3 style="color:#a4c4b9;">Nhanh Lên Nào</h3>
+                               </div>
+                       
+                         </div>
+     
+     
+                            </div>
+                           </div>
+                      </div>
+                    </div>
+                  </div>
             </section>
-        </main>
+
+            <section class="yasuo" id="yasuo" >
+
+                <div class="chungtoi" id="about">
+                    <h2 class="about__subtitle">We're Team Good Loser</h2>
+                    <span class="about__profession">Best Web Design-2021</span>
+    
+                    <p class="about__text">Sản phẩm được tạo ra bởi team Gloser Đại Học CNTT & TT Việt Hàn </p>
+                    <p class="about__text">Backgroud là tháp landmark 81, tất cả hình ảnh trong bài làm đều được lấy ở pexel.com là một trang web hoàn toàn miễn phí sử dụng ảnh ảnh </p>
+                    <p class="about__text">Các công nghệ sử dụng trong trang web bao gồm #rellax.js #bootstrap5 #scrollreveal.js #jQuery.js  trang web được thực hiện để người dùng dễ dàng đưa nội dung lên web</p>
+       
+                    <p class="about__text">Hãy thử ấn    nút    tìm    kiếm    chuyến    bay    nếu    bạn    chưa    ấn   -   -   cảm    ơn    đã    xem    bài    mọi    thắc    mắt    xin    gửi    về    nvdu.20it6@vku.udn.vn"</p>
+
+
+                    <div class="about__social">
+                        <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#" class="about__social-icon"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                    </div>
+                </div>
+
+            </section>
+                          
+    
            
     
             <!-- RELLAX JS -->

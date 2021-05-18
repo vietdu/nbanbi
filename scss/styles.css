@@ -883,6 +883,27 @@ display: none;
 
 
 @media screen and (max-width: 1000px) {
+
+  .banner3 img:hover{
+ 
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+    transform: translateX(1rem);
+  
+  }
+  
+  .dulich h1 {
+  
+    transition: all 1000ms ease-in-out;
+  }
+  
+  
+  
+  .dulich h1:hover{
+  
+    cursor: pointer;
+    transform: translateY(-0.5rem);
+  }
+  
   .home__parallax-img5 {
     background-image: url("anh51.png");
     z-index: var(--z-fixed);
@@ -1198,24 +1219,5 @@ color:#3948b1;
 
 
 
-.banner3 img:hover{
- 
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
-  transform: translateX(1rem);
-
-}
-
-.dulich h1 {
-
-  transition: all 1000ms ease-in-out;
-}
-
-
-
-.dulich h1:hover{
-
-  cursor: pointer;
-  transform: translateY(-0.5rem);
-}
 
 

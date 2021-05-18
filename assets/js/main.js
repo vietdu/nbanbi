@@ -197,3 +197,16 @@ const srr2 = ScrollReveal({
 srr2.reveal('.form_bn3', {delay: 450})
 
 
+const btnOpenVideo = document.querySelectorAll('.islands__video-content')
+const islandsPopup = document.getElementById('popup')
+
+function poPup(){
+    islandsPopup.classList.add('show-popup')
+}
+btnOpenVideo.forEach(b => b.addEventListener('click', poPup))
+
+const btnCloseVideo = document.getElementById('popup-close')
+
+btnCloseVideo.addEventListener('click', ()=> {
+    islandsPopup.classList.remove('show-popup')
+})

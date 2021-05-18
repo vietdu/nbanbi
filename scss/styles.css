@@ -238,8 +238,10 @@ img {
 
 .home__parallax-img5 {
   background-image: url("anh5.png");
+  
   z-index: var(--z-fixed);
 }
+
 .home__parallax-img6 {
 
   z-index: var(--z-fixed);
@@ -889,10 +891,7 @@ display: none;
   width: 340px;
 }
   
-  .home__title {
 
-
-  }
  
   .banner {
     height: auto;
@@ -1079,7 +1078,7 @@ color:#3948b1;
   background-color: none;
 }
 .form{
-  width: 320px;
+  width: 300px;
   padding: 4rem 2rem;
   border-radius: 1rem;
   margin-top: -4%;
@@ -1176,6 +1175,47 @@ color:#3948b1;
   display:none;
 }
 .out:hover{
-  color:yellowgreen;
+  color:rgb(230, 112, 17);
 }
+.banner2 img {
+
+  transition: all 1000ms ease-in-out;
+}
+
+
+
+.banner2 img:hover{
+
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  transform: translateX(-1rem);
+
+}
+
+.banner3 img {
+
+  transition: all 1000ms ease-in-out;
+}
+
+
+
+.banner3 img:hover{
+ 
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  transform: translateX(1rem);
+
+}
+
+.dulich h1 {
+
+  transition: all 1000ms ease-in-out;
+}
+
+
+
+.dulich h1:hover{
+
+  cursor: pointer;
+  transform: translateY(-0.5rem);
+}
+
 

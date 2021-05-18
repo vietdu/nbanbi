@@ -105,7 +105,7 @@ function myFunction() {
     
 
 
-    if (((window.pageYOffset+350) > banner_zom1)) {
+    if (((window.pageYOffset+1000) > banner_zom1)) {
       banner1.classList.add("banner_zom");
     } 
     else{

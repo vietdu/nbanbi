@@ -2,25 +2,29 @@
 const navMenu = document.getElementById('nav-menu'),
 
     toggleMenu = document.getElementById('nav-toggle'),
-    closeMenu = document.getElementById('nav-close'),
+  
     dangnhapMenu = document.getElementById('dangnhap-menu'),
     dangnkyMenu = document.getElementById('dangky-menu'),
+    hienthibay=document.getElementById('tkbay'),
+
     closedangnhap=document.getElementById('dangnhap'),
     closedangnhap1=document.getElementById('dangnhap1'),
+    closetkbay1=document.getElementById('outtkbay1'),
     closedangnhap2=document.getElementById('dangnhap2'),
     closedangnhap3=document.getElementById('dangnhap3'),
     closedangnhap4=document.getElementById('out'),
-    closedangnhap5=document.getElementById('out1')
+    closedangnhap5=document.getElementById('out1'),
+    closebay=document.getElementById('outtkbay')
     
   
 
 // SHOW
 toggleMenu.addEventListener('click', ()=>{
-    navMenu.classList.toggle('show')
+   navMenu.classList.toggle('show')
 })
 closedangnhap.addEventListener('click', ()=>{
-  dangnhapMenu.classList.toggle('andangnhap'),
-  navMenu.classList.remove('show')
+  dangnhapMenu.classList.toggle('andangnhap')
+  
 })
 closedangnhap1.addEventListener('click', ()=>{
   dangnhapMenu.classList.toggle('andangnhap'),
@@ -45,11 +49,26 @@ closedangnhap5.addEventListener('click', ()=>{
   
 })
 
+closetkbay1.addEventListener('click', ()=>{
+  
+
+  hienthibay.classList.toggle('andangnhap'),
+  hienthibay.classList.remove('dangky')
+  
+})
+
+closebay.addEventListener('click', ()=>{
+  
+  hienthibay.classList.toggle('andangnhap'),
+  hienthibay.classList.remove('dangky')
+ 
+  
+})
+
+
 
 // HIDDEN
-closeMenu.addEventListener('click', ()=>{
-    navMenu.classList.remove('show')
-})
+
 var rellax = new Rellax('.parallax');
 const srr = ScrollReveal({
     origin: 'top',
@@ -101,25 +120,16 @@ function myFunction() {
 
   
   if (((window.pageYOffset+125) > (sticky-1))) {
-    header2.classList.add("sticky");
+   
+ 
     
-
-
-    if (((window.pageYOffset+1000) > banner_zom1)) {
-      banner1.classList.add("banner_zom");
-    } 
-    else{
-      banner1.classList.remove("banner_zom");
-    }
-
-    
-    if (((window.pageYOffset+350) > banner_zom2)) {
+    if (((window.pageYOffset+300) > banner_zom2)) {
       banner2.classList.add("banner_zom");
     } 
     else{
       banner2.classList.remove("banner_zom");
     }
-    if (((window.pageYOffset+350) > banner_zom3)) {
+    if (((window.pageYOffset+300) > banner_zom3)) {
       banner3.classList.add("banner_zom");
     } 
     else{
@@ -130,7 +140,7 @@ function myFunction() {
 
   } 
   else  {
-    header2.classList.remove("sticky");
+    
     banner2.classList.remove("banner_zom");
   }
 
@@ -173,9 +183,17 @@ sr.reveal('.section__data',{origin: 'left',distance: '70px'});
 sr.reveal('.section__img',{origin: 'left',distance: '90px',delay: 200}); 
 
 function myFunction1() {
-  document.getElementById("banner_id1").style.visibility = "visible";
-  document.getElementById("khoangtrang").style.visibility = "hidden";
-  location.href = "#khoangtrang";
+  document.getElementById("Booking").style.display = "flex";
+  
+ 
+  location.href = "#Booking";
+}
+
+function myFunction2() {
+ 
+  
+  navMenu.classList.add('show')
+  
 }
 
 const srr1 = ScrollReveal({
@@ -197,16 +215,3 @@ const srr2 = ScrollReveal({
 srr2.reveal('.form_bn3', {delay: 450})
 
 
-const btnOpenVideo = document.querySelectorAll('.islands__video-content')
-const islandsPopup = document.getElementById('popup')
-
-function poPup(){
-    islandsPopup.classList.add('show-popup')
-}
-btnOpenVideo.forEach(b => b.addEventListener('click', poPup))
-
-const btnCloseVideo = document.getElementById('popup-close')
-
-btnCloseVideo.addEventListener('click', ()=> {
-    islandsPopup.classList.remove('show-popup')
-})

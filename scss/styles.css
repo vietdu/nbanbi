@@ -156,13 +156,6 @@ img {
   }
 }
 
-.nav__close {
-  position: absolute;
-  top: .5rem;
-  left: 1rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
 
 .nav__item {
   margin-bottom: 2rem;
@@ -174,7 +167,7 @@ img {
 }
 
 .nav__logo {
-  padding-left: 35px;
+  padding-left: 20px;
   font-size: 30px;
  
 }
@@ -720,7 +713,7 @@ margin-bottom: 2%;
   width: 970px;
   height: 500px;
   padding: 2rem 0;
-  margin-top: 0.2%;
+  margin-top: 12%;
   color: var(--white-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -913,7 +906,11 @@ display: none;
 
 @media screen and (max-width: 1000px) {
 
-  
+  .nav__logo {
+    padding-left: 2px;
+   
+   
+  }
   
   .home__parallax-img5 {
     background-image: url("anh51.png");
@@ -1342,3 +1339,80 @@ select:focus {
 .hienthibay{
   display:none;
 }
+
+
+
+.anhdulich body {
+  background-color: #C1C7D7;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.anhdulich .card {
+  width: 340px;
+  border: none;
+  border-radius: 12px;
+  position: relative
+}
+
+.anhdulich img {
+  border-radius: 12px
+}
+
+.anhdulich div .text-white {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  right: 10%;
+  font-size: 28px
+}
+
+.anhdulich div .text-muted {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  right: 12%;
+  font-size: 14px;
+  color: #adb5bd !important
+}
+
+.anhdulich div .justify-content-between {
+  position: absolute;
+  top: 79%;
+  left: 10%;
+  right: 10%
+}
+
+.justify-content-between span {
+  padding-right: 10px
+}
+
+.justify-content-between hr {
+  border-top: 2px solid #adb5bd;
+  width: 70px
+}
+
+.justify-content-between hr:hover {
+  border-top: 2px solid #fff;
+  cursor: pointer
+}
+.anhdulich hr .first {
+  border: 5px solid green;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background: #616BCC;
+  border: none;
+  border-radius: 7px;
+  padding: 15px
+}
+
+.btn-primary:hover {
+  background: #616BCC
+}
+
+.btn-primary:focus {
+  box-shadow: none
+}
+

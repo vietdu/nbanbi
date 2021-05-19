@@ -6,6 +6,7 @@ const navMenu = document.getElementById('nav-menu'),
     dangnhapMenu = document.getElementById('dangnhap-menu'),
     dangnkyMenu = document.getElementById('dangky-menu'),
     hienthibay=document.getElementById('tkbay'),
+    hienthithanhtoan=document.getElementById('thanhtoan'),
 
     closedangnhap=document.getElementById('dangnhap'),
     closedangnhap1=document.getElementById('dangnhap1'),
@@ -14,9 +15,42 @@ const navMenu = document.getElementById('nav-menu'),
     closedangnhap3=document.getElementById('dangnhap3'),
     closedangnhap4=document.getElementById('out'),
     closedangnhap5=document.getElementById('out1'),
-    closebay=document.getElementById('outtkbay')
+    closebay=document.getElementById('outtkbay'),
+    clicktt=document.getElementById('bay'),
+    clicktt1=document.getElementById('bay1'),
+    clicktt2=document.getElementById('bay2'),
+    clicktt3=document.getElementById('bay3'),
+    clicktt4=document.getElementById('bay4'),
+    clicktt5=document.getElementById('bay5'),
+    clicktt6=document.getElementById('bay6'),
+    thoattt=document.getElementById('thoattt')
+
+    thoattt.addEventListener('click', ()=>{
+      hienthithanhtoan.classList.remove('thanhtoanshow')
+   })
     
-  
+    clicktt.addEventListener('click', ()=>{
+      hienthithanhtoan.classList.add('thanhtoanshow')
+   })
+   clicktt1.addEventListener('click', ()=>{
+    hienthithanhtoan.classList.add('thanhtoanshow')
+ })
+    clicktt2.addEventListener('click', ()=>{
+      hienthithanhtoan.classList.add('thanhtoanshow')
+   })
+    clicktt3.addEventListener('click', ()=>{
+      hienthithanhtoan.classList.add('thanhtoanshow')
+   })
+    clicktt4.addEventListener('click', ()=>{
+      hienthithanhtoan.classList.add('thanhtoanshow')
+   })
+    clicktt5.addEventListener('click', ()=>{
+      hienthithanhtoan.classList.add('thanhtoanshow')
+   })
+    clicktt6.addEventListener('click', ()=>{
+      hienthithanhtoan.classList.add('thanhtoanshow')
+   })
+ 
 
 // SHOW
 toggleMenu.addEventListener('click', ()=>{
@@ -52,8 +86,10 @@ closedangnhap5.addEventListener('click', ()=>{
 closetkbay1.addEventListener('click', ()=>{
   
 
-  hienthibay.classList.toggle('andangnhap'),
-  hienthibay.classList.remove('dangky')
+  hienthibay.classList.remove('dangky'),
+  hienthibay.classList.remove('andangnhap'),
+  dangnhapMenu.classList.add('andangnhap'),
+  dangnkyMenu.classList.add('dangky')
   
 })
 

@@ -918,16 +918,17 @@ display: none;
 
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .bannerx{
     height: auto;
-    margin-top: 5%;
+    margin-top: 3%;
     
   }
+
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 
  
   .anhdulich .card {
@@ -958,7 +959,7 @@ display: none;
   
 .bannerx{
   height: auto;
-  margin-top: -6.5%;
+  margin-top: -4.5%;
   
 }
  

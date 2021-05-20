@@ -788,9 +788,9 @@ margin-bottom: 2%;
   
   margin-left: -10px;
 overflow: auto;
-  width: 1050px;
-  border-style: solid;
-  border-color: #7aa5fa;
+  width: 1100px;
+  border-style: dotted solid;
+  border-color: #d5d6d8;
   
   
 }
@@ -1569,3 +1569,8 @@ margin-left: auto;
 .xoay{
   transform: rotate(90deg);
 }
+
+.thebo{
+  background-color:#000;
+}
+

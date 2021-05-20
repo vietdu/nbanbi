@@ -184,13 +184,13 @@ function myFunction() {
    
  
     
-    if (((window.pageYOffset+300) > banner_zom2)) {
+    if (((window.pageYOffset+130) > banner_zom2)) {
       banner2.classList.add("banner_zom");
     } 
     else{
       banner2.classList.remove("banner_zom");
     }
-    if (((window.pageYOffset+300) > banner_zom3)) {
+    if (((window.pageYOffset+130) > banner_zom3)) {
       banner3.classList.add("banner_zom");
     } 
     else{
@@ -246,7 +246,6 @@ sr.reveal('.section__img',{origin: 'left',distance: '90px',delay: 200});
 function myFunction1() {
   document.getElementById("Booking").style.display = "flex";
   
- 
   location.href = "#Booking";
 }
 
@@ -255,6 +254,14 @@ function myFunction2() {
   
   navMenu.classList.add('show')
   
+}
+function myFunction3() {
+  
+  location.href = "#Booking";
+}
+function myFunction4() {
+  
+  location.href = "#bannerkhachsan";
 }
 
 const srr1 = ScrollReveal({

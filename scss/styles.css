@@ -1427,7 +1427,7 @@ select:focus {
   border-radius: 5px;
 }
 
-.btn-primary {
+.anhdulich .btn-primary {
   background: #616BCC;
   border: none;
   border-radius: 7px;
@@ -1519,7 +1519,7 @@ margin-left: auto;
   font-size: 12px
 }
 
-.dollar {
+.tien {
   font-size: 18px;
   color: #097bf7
 }

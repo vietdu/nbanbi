@@ -23,6 +23,8 @@
   }
 }
 
+
+
 /*===== BASE =====*/
 *, ::before, ::after {
   -webkit-box-sizing: border-box;
@@ -399,7 +401,7 @@ img {
   left:3%;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .bd-grid {
     margin-left: 0;
     margin-right: 0;
@@ -724,9 +726,9 @@ margin-bottom: 2%;
   opacity: 1;
   margin: auto;
   width: 970px;
-  height: 500px;
+  height: auto;
   padding: 2rem 0;
-  margin-top: 12%;
+  margin-top: 2%;
   color: var(--white-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -916,10 +918,18 @@ display: none;
 
 }
 
+@media screen and (max-width: 1400px) {
+  .bannerx{
+    height: auto;
+    margin-top: 5%;
+    
+  }
+}
+
 
 @media screen and (max-width: 1000px) {
 
-
+ 
   .anhdulich .card {
     
     border: none;
@@ -946,7 +956,11 @@ display: none;
   width: 380px;
 }
   
-
+.bannerx{
+  height: auto;
+  margin-top: -6.5%;
+  
+}
  
   .banner {
     height: auto;
@@ -956,11 +970,7 @@ display: none;
 
    
   }
- .bannerx{
-   height: auto;
-   margin-top: -11.5%;
-   
- }
+
  .bannerf{
    height: auto;
  }

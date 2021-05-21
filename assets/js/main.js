@@ -151,6 +151,24 @@ function move(e){
     })
     
 }
+const srr1 = ScrollReveal({
+  origin: 'left',
+  distance: '80px',
+  duration: 2000,
+  reset: this,
+})
+
+srr1.reveal('.form_bn2', {delay: 450})
+
+const srr2 = ScrollReveal({
+  origin: 'right',
+  distance: '80px',
+  duration: 2000,
+  reset: this,
+})
+
+
+srr2.reveal('.form_bn3', {delay: 450})
 
 
 srr.reveal('.about__img', {delay: 500})
@@ -165,8 +183,7 @@ window.onscroll = function() {myFunction()};
 var header2 = document.getElementById("myheader2");
 var sticky = header2.offsetTop;
 var w = window.innerWidth;
-var banner1 = document.getElementById("banner_id1");
-var banner_zom1 = banner1.offsetTop;
+
 var banner2 = document.getElementById("banner_id2");
 var banner_zom2 = banner2.offsetTop;
 var banner3 = document.getElementById("banner_id3");
@@ -175,35 +192,31 @@ var banner_zom3 = banner3.offsetTop;
 
 
 
+
+
 function myFunction() {
 
-  
-  if (((window.pageYOffset+125) > (sticky-1))) {
-   
- 
+
     
-    if (((window.pageYOffset+190) > banner_zom2)) {
+    if (((window.pageYOffset+180) > banner_zom2)) {
       banner2.classList.add("banner_zom");
     } 
     else{
       banner2.classList.remove("banner_zom");
     }
-    if (((window.pageYOffset+160) > banner_zom3)) {
+    if (((window.pageYOffset+180) > banner_zom3)) {
       banner3.classList.add("banner_zom");
     } 
     else{
       banner3.classList.remove("banner_zom");
     }
   
+  
 
 
   } 
-  else  {
-    
-    banner2.classList.remove("banner_zom");
-  }
 
-}
+
 
 
 
@@ -213,6 +226,7 @@ srr.reveal('.contact__subtitle', {})
 srr.reveal('.contact__text', {interval: 200})
 srr.reveal('.contact__input', {delay: 400})
 srr.reveal('.contact__button', {delay: 600})
+
 
 
 
@@ -258,24 +272,10 @@ function myFunction4() {
   
   location.href = "#bannerkhachsan";
 }
+function myFunctiontk(){
+  location.href = "#bannerkhachsan"
+}
 
-const srr1 = ScrollReveal({
-  origin: 'left',
-  distance: '80px',
-  duration: 2000,
-  reset: this,
-})
-
-srr1.reveal('.form_bn2', {delay: 450})
-
-const srr2 = ScrollReveal({
-  origin: 'right',
-  distance: '80px',
-  duration: 2000,
-  reset: this,
-})
-
-srr2.reveal('.form_bn3', {delay: 450})
 
 
 

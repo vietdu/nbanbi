@@ -843,11 +843,7 @@ display: none;
 
 
 @media screen and (max-width: 900px) {
-  .fl-wrap {
-    float: left;
-    width: 140%;
-    position: relative
-  }
+  
  
   .anhdulich .card {
     
@@ -1246,6 +1242,115 @@ input:focus {
 
 
 
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+  
+
+
+
+.main-search-input {
+  background: #fff;
+  padding: 0 10px 0 0;
+  border-radius: 1px;
+  margin-top: 3px;
+  box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3)
+}
+@media screen and (max-width: 1500px) {
+  .fl-wrap {
+    float: left;
+    width: 230%;
+    position: relative
+  }
+}
+@media screen and (max-width: 500px) {
+  .fl-wrap {
+    float: left;
+    width: 110%;
+    position: relative
+  }
+}
+@media screen and (min-width: 1500px) {
+  .fl-wrap {
+    float: left;
+    width: 300%;
+    position: relative
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .fl-wrap {
+    float: left;
+    width: 140%;
+    position: relative
+  }
+}
+
+
+
+
+.main-search-input-item input:first-child {
+  border-radius: 100%
+}
+
+
+.main-search-button {
+  background: #307ce0;
+  border-radius: 2px;
+}
+
+.main-search-button {
+  position: absolute;
+  right: 0px;
+  height: 28px;
+  width: 120px;
+  color: #fff;
+  top: 0;
+  border: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  cursor: pointer
+}
+
+.main-search-input-wrap {
+
+  max-width: 500px;
+  margin:  auto;
+  position: relative
+}
+
+
 
 
 
@@ -1488,101 +1593,5 @@ margin-left: auto;
 .hihi{
   padding-bottom: 0.7%;
  
-}
-
-
-.topnav {
-  overflow: hidden;
-  background-color: #e9e9e9;
-}
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
-}
-
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-}
-
-
-  
-
-
-
-.main-search-input {
-  background: #fff;
-  padding: 0 10px 0 0;
-  border-radius: 1px;
-  margin-top: 3px;
-  box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3)
-}
-@media screen and (min-width: 900px) {
-  .fl-wrap {
-    float: left;
-    width: 230%;
-    position: relative
-  }
-}
-@media screen and (min-width: 1500px) {
-  .fl-wrap {
-    float: left;
-    width: 300%;
-    position: relative
-  }
-}
-
-
-
-
-
-
-.main-search-input-item input:first-child {
-  border-radius: 100%
-}
-
-
-.main-search-button {
-  background: #307ce0;
-  border-radius: 2px;
-}
-
-.main-search-button {
-  position: absolute;
-  right: 0px;
-  height: 28px;
-  width: 120px;
-  color: #fff;
-  top: 0;
-  border: none;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  cursor: pointer
-}
-
-.main-search-input-wrap {
-
-  max-width: 500px;
-  margin:  auto;
-  position: relative
 }
 

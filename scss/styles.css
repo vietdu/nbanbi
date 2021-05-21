@@ -1295,6 +1295,7 @@ input:focus {
     width: 230%;
     position: relative
   }
+
 }
 
 @media screen and (min-width: 1500px) {
@@ -1303,28 +1304,25 @@ input:focus {
     width: 290%;
     position: relative
   }
+ 
 }
 
 @media screen and (max-width: 700px) {
   .fl-wrap {
     float: left;
-    width: 94%;
+    width: 120px;
     position: relative
+  }
+  .nuttk{
+    width:120px;
   }
 
 
   
 }
 
+
   
-
-
-
-
-
-.main-search-input-item input:first-child {
-  border-radius: 100%
-}
 
 
 .main-search-button {
@@ -1334,7 +1332,7 @@ input:focus {
 
 .main-search-button {
   position: absolute;
-  right: 10px;
+  right: 2px;
   height: 28px;
   width: 32px;
   color: #fff;

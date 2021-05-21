@@ -1334,7 +1334,7 @@ input:focus {
 
 .main-search-button {
   position: absolute;
-  right: 0px;
+  right: 10px;
   height: 28px;
   width: 32px;
   color: #fff;

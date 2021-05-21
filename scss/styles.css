@@ -1240,7 +1240,9 @@ input:focus {
   margin-left: 3.5%
 }
 
-
+.bttk i{
+  display:none;
+}
 
 .topnav {
   overflow: hidden;
@@ -1294,13 +1296,7 @@ input:focus {
     position: relative
   }
 }
-@media screen and (max-width: 500px) {
-  .fl-wrap {
-    float: left;
-    width: 110%;
-    position: relative
-  }
-}
+
 @media screen and (min-width: 1500px) {
   .fl-wrap {
     float: left;
@@ -1312,9 +1308,10 @@ input:focus {
 @media screen and (max-width: 900px) {
   .fl-wrap {
     float: left;
-    width: 140%;
+    width: 100%;
     position: relative
   }
+  
 }
 
 
@@ -1326,21 +1323,22 @@ input:focus {
 
 
 .main-search-button {
-  background: #307ce0;
+  background:none;
   border-radius: 2px;
 }
 
 .main-search-button {
   position: absolute;
   right: 0px;
-  height: 50px;
-  width: 115px;
+  height: 28px;
+  width: 50px;
   color: #fff;
   top: 0;
-  border: none;
+  border: 1px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
-  cursor: pointer
+  cursor: pointer;
+
 }
 
 .main-search-input-wrap {

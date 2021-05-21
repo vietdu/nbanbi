@@ -1300,7 +1300,7 @@ input:focus {
 @media screen and (min-width: 1500px) {
   .fl-wrap {
     float: left;
-    width: 300%;
+    width: 290%;
     position: relative
   }
 }
@@ -1308,11 +1308,14 @@ input:focus {
 @media screen and (max-width: 900px) {
   .fl-wrap {
     float: left;
-    width: 100%;
+    width: 95%;
     position: relative
   }
   
 }
+
+  
+
 
 
 
@@ -1331,7 +1334,7 @@ input:focus {
   position: absolute;
   right: 0px;
   height: 28px;
-  width: 50px;
+  width: 32px;
   color: #fff;
   top: 0;
   border: 1px;

@@ -843,7 +843,7 @@ display: none;
 
 
 @media screen and (max-width: 900px) {
-  
+ 
  
   .anhdulich .card {
     
@@ -1305,12 +1305,14 @@ input:focus {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .fl-wrap {
     float: left;
-    width: 95%;
+    width: 100%;
     position: relative
   }
+
+
   
 }
 
@@ -1419,7 +1421,7 @@ input:focus {
 
 .anhdulich div .justify-content-between {
   position: absolute;
-  top: 60%;
+bottom: 30%;
   left: 10%;
   right: 10%
 }

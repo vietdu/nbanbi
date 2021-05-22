@@ -395,7 +395,7 @@ img {
 }
 
 .home__title {
-  top: 17%;
+  top: 9%;
   left:3%;
 }
 .banner2{
@@ -893,7 +893,7 @@ display: none;
    height:500px;
  }
 .home__title{
-  top:15%;
+  top:8%;
   left:30%;
 
 }
@@ -1082,7 +1082,7 @@ color:#3948b1;
   height: 48px;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
-  color:#d5d6d8;
+  color:#10505b;
 }
 .form__input{
   position: absolute;
@@ -1104,7 +1104,7 @@ color:#3948b1;
   top: 1rem;
   padding: 0 .25rem;
   background-color:none;
-  color: #d5d6d8;
+  color: #10505b;
   font-size: var(--normal-font-size);
   transition: .3s;
 }
@@ -1132,7 +1132,7 @@ color:#3948b1;
 .form__input:focus + .form__label{
   top: -1.2rem;
   left: .8rem;
-  color: #ff9e9d;
+  color: #2f3569;
   font-size: var(--small-font-size);
   font-weight: 500;
   z-index: 10;
@@ -1594,5 +1594,45 @@ margin-left: auto;
 .hihi{
   padding-bottom: 0.7%;
  
+}
+
+.giamgia h1{
+  font-size: 72px;
+  background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tencty html {
+	background: #1d1f20;
+	margin:  0 4rem;
+}
+.tencty .headerx {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+	font-weight: 120px;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #f35626;
+	background-image:-webkit-linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+.nhorang h1{
+  font-size: 72px;
+  background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 

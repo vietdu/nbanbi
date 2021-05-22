@@ -824,10 +824,7 @@ display: none;
       border-bottom: 1px solid;
     padding-bottom: 1rem;
     }
-    .quan {
-      width: auto;
-      
-    }
+  
     
 
 }
@@ -966,10 +963,6 @@ display: none;
   .grid.wide.container {
     border-bottom: 1px solid;
     padding-bottom: 1rem;
-  }
-  .quan {
-    width: auto;
-    
   }
 }
 
@@ -1295,6 +1288,9 @@ input:focus {
     width: 230%;
     position: relative
   }
+  .quan{
+    width: 1000px;
+  }
 
 }
 
@@ -1316,10 +1312,15 @@ input:focus {
   .nuttk{
     width:120px;
   }
+  .quan{
+    width: auto;
+  }
+
 
 
   
 }
+
 
 
   

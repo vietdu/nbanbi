@@ -13,6 +13,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
         $(document).ready(function(){
+            $('#myCarousel').carousel({
+interval: 6000,
+});
           $("#ha11").click(function(){
             $("#ha1").attr("src", "haian1.jpg");
           });
@@ -86,7 +89,7 @@
                  <a style="text-decoration: none" href="#bannerkhachsan" class="nav__link active"><i class='bx bx-home-circle'></i> Khách sạn</a>
                    <a  style="text-decoration: none" href="#Booking" class="nav__link dancach"><i class='bx bxs-plane' ></i> Chuyến bay</a>
                     
-                    <a style="text-decoration: none" href="#yasuo" class="nav__link"><i class='bx bx-heart-circle'></i> Về chúng tôi</a>
+                    <a style="text-decoration: none" href="#yasuo" class="nav__link"><i class='bx bx-heart-circle'></i> Ưu đãi</a>
             </div>
 
         
@@ -356,8 +359,8 @@
                                             
                                             <div class="quan">
                                             
-                                                <div class="grid wide container">
-                                                          <div class="prolayer-fly"  style="margin-top: 2%;">
+                                                <div class="grid wide container thequan" >
+                                                          <div class="prolayer-fly "  style="margin-top: 2%;">
                                                          <div class="prolayer3">              
                                                          <img src="slide.jpg" width="40" height="10" alt="">
                                                         </div>
@@ -396,9 +399,9 @@
                             
                                                         </div>
                                                     
-                                                   <hr>
-                                                   <div class="grid wide container">
-                                                    <div class="prolayer-fly" >
+                                                   <br>
+                                                   <div class="grid wide container thequan">
+                                                    <div class="prolayer-fly " >
                                                    <div class="prolayer3">              
                                                    <img src="slidep.png" width="40" height="10" alt="">
                                                   </div>
@@ -435,9 +438,9 @@
                                                   </div>
                                                   </div>
                                               
-                                             <hr>
-                                             <div class="grid wide container">
-                                                <div class="prolayer-fly" >
+                                             <br>
+                                             <div class="grid wide container thequan">
+                                                <div class="prolayer-fly " >
                                                <div class="prolayer3">              
                                                <img src="slidepr.png" width="40" height="10" alt="">
                                               </div>
@@ -474,8 +477,8 @@
                                               </div>
                                               </div>
                                           
-                                         <hr>
-                                         <div class="grid wide container">
+                                         <br>
+                                         <div class="grid wide container thequan">
                                             <div class="prolayer-fly" >
                                            <div class="prolayer3">              
                                            <img src="slidepro.png" width="40" height="10" alt="">
@@ -513,11 +516,11 @@
                                           </div>
                                           </div>
                                       
-                                     <hr>
+                                     <br>
                                      
                                   
                                  
-                                 <div class="grid wide container">
+                                 <div class="grid wide container thequan">
                                     <div class="prolayer-fly" >
                                    <div class="prolayer3">              
                                    <img src="slidep.png" width="40" height="10" alt="">
@@ -555,8 +558,8 @@
                                   </div>
                                   </div>
                               
-                                                    <hr>
-                                                    <div class="grid wide container">
+                                                    <br>
+                                                    <div class="grid wide container thequan">
                                                     <div class="prolayer-fly" >
                                                    <div class="prolayer3">              
                                                    <img src="slidepr.png" width="40" height="10" alt="">
@@ -594,8 +597,8 @@
                                                    </div>
                                                    </div>
                             
-                                                   <hr>                  
-                                                   <div class="grid wide container">
+                                                   <br>                  
+                                                   <div class="grid wide container thequan">
                                                     <div class="prolayer-fly" >
                                                    <div class="prolayer3">              
                                                    <img src="slide.jpg" width="40" height="10" alt="">
@@ -660,41 +663,42 @@
         
        
      
-            
-            <section class="container banner banner2 " id="banner_id2" >
-                <div class="row form_bn2 " id="boroll_2">
-
-                    <div class="col-sm giamgia">
-                      
-                        <h2>Giảm</h2>
-                        <h1><i>20% GIÁ</i><h1>
-                        <h2>Nếu</h2>
-                        <h2>Bạn tiếp tục đặt vé ở chúng tôi</h2>
-                        <div class="pt-5 coupon"> <i>trong vòng một tháng gần nhất bạn mua</i> </div>
-                        <button class="btn rounded mt-3" style="font-size: 20px;" onclick="myFunction3()"><i>đặt vé để nhận ưu đãi</i></button>
-                  </div>
-              <div class="col-sm ">
-                <img src="banner2.png" alt="" >
-              </div>
-            </div>
-
+            <section id="yasuo">
+                <br>
+                <br>
             </section>
-            <section class="container bannerf  banner3 " id="banner_id3" >
-                <div class="row form_bn3">
-                    <div class="col-sm ">
-                        <img src="banner2l.png" alt="" >
-                      </div>
 
-                    <div class="col-sm nhorang ">
-                      
-                        <h2>Nhận ngay</h2>
-                        <h1><i>COMBO</i><h1>
-                        <h2>Ưu đãi</h2>
-                        <h2>Chỉ có trong mùa hè này</h2>
-                        <div class="pt-5 coupon"> <i>khuyến mãi áp dụng trong tháng 6 này</i> </div>
-                        <button class="btn rounded mt-3" style="font-size: 20px;" onclick="myFunction4()" ><i>combo Sài Gòn-Đà Nẵng 1.500.000vnđ</i></button>
-                  </div>
-
+            <section class="container   banner3 "  >
+                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mask flex-center">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-7 col-12 order-md-1 order-2">
+             
+                                            <h4>Giảm 20% vé</h4>
+                                            <p>Cho lần mua tiếp theo trong vào 1 tháng gần nhất</p> <br> <a href="#">BUY NOW</a>
+                                        </div>
+                                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="sale1.png"class="mx-auto" alt="slide"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="mask flex-center">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-7 col-12 order-md-1 order-2">
+                                            <h4>Combo du lịch</h4>
+                                            <p>Đặt ngay khu nghĩ dưỡng cao cấp kèm những mức giá hấp dẫn.</p> <br> <a href="#">BUY NOW</a>
+                                        </div>
+                                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="sale1.png" class="mx-auto" alt="slide"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only"></span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only"></span> </a>
                 </div>
             </section>
             
@@ -708,7 +712,7 @@
                        <div class="p-1 border dulich bg-light ">
 
                         <div class="row  " >
-                            <div class="col-sm anhdulich">
+                            <div class="col-sm anhdulich ">
                                 <div class="container d-flex justify-content-center">
                                     <div class="card p-2 my-4"> <img src="haian1.jpg" height="560" id="ha1">
                                         <div class="text-white">
@@ -926,7 +930,7 @@
             </section>
 
 
-            <section class="yasuo" id="yasuo" >
+            <section class="yasuo"  >
 
                 <div class="chungtoi" id="about">
                     <h2 class="about__subtitle">We're Team Good Loser</h2>

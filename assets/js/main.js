@@ -194,27 +194,6 @@ var banner_zom3 = banner3.offsetTop;
 
 
 
-function myFunction() {
-
-
-    
-    if (((window.pageYOffset+180) > banner_zom2)) {
-      banner2.classList.add("banner_zom");
-    } 
-    else{
-      banner2.classList.remove("banner_zom");
-    }
-    if (((window.pageYOffset+180) > banner_zom3)) {
-      banner3.classList.add("banner_zom");
-    } 
-    else{
-      banner3.classList.remove("banner_zom");
-    }
-  
-  
-
-
-  } 
 
 
 
@@ -276,6 +255,83 @@ function myFunctiontk(){
   location.href = "#bannerkhachsan"
 }
 
+$(document).ready(function() {
+
+
+
+  if ($('.bbb_deals_slider').length) {
+  var bbb_dealsSlider = $('.bbb_deals_slider');
+  bbb_dealsSlider.owlCarousel({
+  items: 1,
+  loop: false,
+  navClass: ['bbb_deals_slider_prev', 'bbb_deals_slider_next'],
+  nav: false,
+  dots: false,
+  smartSpeed: 1200,
+  margin: 30,
+  autoplay: false,
+  autoplayTimeout: 5000
+  });
+  
+  if ($('.bbb_deals_slider_prev').length) {
+  var prev = $('.bbb_deals_slider_prev');
+  prev.on('click', function() {
+  bbb_dealsSlider.trigger('prev.owl.carousel');
+  });
+  }
+  
+  if ($('.bbb_deals_slider_next').length) {
+  var next = $('.bbb_deals_slider_next');
+  next.on('click', function() {
+  bbb_dealsSlider.trigger('next.owl.carousel');
+  });
+  }
+  }
+  
+  
+  
+  
+  if ($('.bbb_deals_timer_box').length) {
+  var timers = $('.bbb_deals_timer_box');
+  timers.each(function() {
+  var timer = $(this);
+  
+  var targetTime;
+  var target_date;
+  
+  if (timer.data('target-time') !== "") {
+  targetTime = timer.data('target-time');
+  target_date = new Date(targetTime).getTime();
+  } else {
+  var date = new Date();
+  date.setDate(date.getDate() + 2);
+  target_date = date.getTime();
+  }
+  
+  var days, hours, minutes, seconds;
+  
+  var h = timer.find('.bbb_deals_timer_hr');
+  var m = timer.find('.bbb_deals_timer_min');
+  var s = timer.find('.bbb_deals_timer_sec');
+  
+  setInterval(function() {
+  
+  var current_date = new Date().getTime();
+  var seconds_left = (target_date - current_date) / 1000;
+  console.log(seconds_left);
+  
+  days = parseInt(seconds_left / 86400);
+  seconds_left = seconds_left % 86400;
+  
+  hours = parseInt(seconds_left / 3600);
+  hours = hours + days * 24;
+  seconds_left = seconds_left % 3600;
+  
+  
+  minutes = parseInt(seconds_left / 60);
+  seconds = parseInt(seconds_left % 60);
+  
+  if (hours.toString().length < 2) { hours="0" + hours; } if (minutes.toString().length < 2) { minutes="0" + minutes; } if (seconds.toString().length < 2) { seconds="0" + seconds; } }); }); } });
 
 
 

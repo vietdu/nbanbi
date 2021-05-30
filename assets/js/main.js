@@ -144,8 +144,8 @@ function move(e){
  
         const speed =layer.getAttribute('data-speed')
 
-        const x = (-window.innerWidth  -e.pageX*speed)/120
-        const y = (-window.innerWidth  -e.pageY*speed)/240
+        const x = (-window.innerWidth  -e.pageX*speed)/240
+        const y = (-window.innerWidth  -e.pageY*speed)/120
 
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`
     })

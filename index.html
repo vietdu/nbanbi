@@ -5,70 +5,87 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GLoser</title>
 
-        <link rel="stylesheet" href="scss/styles.css">
+        <link rel="stylesheet" href="css/styles.css">
 
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link rel="icon" href="logo.png" sizes="16x16" type="png"> 
+        <link rel="icon" href="anh/logo.png" sizes="16x16" type="png"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
+
+var images = ["anh/kiquan1.jpg", "anh/kiquan2.jpg", "anh/kiquan3.jpg", "anh/kiquan5.jpg",];
+  $(function () {
+      var i = 0;
+      $("#dvImage").css("background-image", "url(" + images[i] + ")");
+      setInterval(function () {
+          i++;
+          if (i == images.length) {
+              i = 0;
+          }
+          $("#dvImage").fadeOut("slow", function () {
+              $(this).css("background-image", "url(" + images[i] + ")");
+              $(this).fadeIn("slow");
+          });
+      }, 10000);
+  });
+           
         $(document).ready(function(){
             $('#myCarousel').carousel({
 interval: 6000,
 });
           $("#ha11").click(function(){
-            $("#ha1").attr("src", "haian1.jpg");
+            $("#ha1").attr("src", "anh/haian1.jpg");
           });
           $("#ha12").click(function(){
-            $("#ha1").attr("src", "haian2.jpg");
+            $("#ha1").attr("src", "anh/haian2.jpg");
           });
           $("#ha13").click(function(){
-            $("#ha1").attr("src", "haian3.jpg");
+            $("#ha1").attr("src", "anh/haian3.jpg");
           });
           $("#ha21").click(function(){
-            $("#ha2").attr("src", "haian1.jpg");
+            $("#ha2").attr("src", "anh/haian1.jpg");
           });
           $("#ha22").click(function(){
-            $("#ha2").attr("src", "haian2.jpg");
+            $("#ha2").attr("src", "anh/haian2.jpg");
           });
           $("#ha23").click(function(){
-            $("#ha2").attr("src", "haian3.jpg");
+            $("#ha2").attr("src", "anh/haian3.jpg");
           });
           $("#ha31").click(function(){
-            $("#ha3").attr("src", "haian1.jpg");
+            $("#ha3").attr("src", "anh/haian1.jpg");
           });
           $("#ha32").click(function(){
-            $("#ha3").attr("src", "haian2.jpg");
+            $("#ha3").attr("src", "anh/haian2.jpg");
           });
           $("#ha33").click(function(){
-            $("#ha3").attr("src", "haian3.jpg");
+            $("#ha3").attr("src", "anh/haian3.jpg");
           });
           $("#ha41").click(function(){
-            $("#ha4").attr("src", "haian1.jpg");
+            $("#ha4").attr("src", "anh/haian1.jpg");
           });
           $("#ha42").click(function(){
-            $("#ha4").attr("src", "haian2.jpg");
+            $("#ha4").attr("src", "anh/haian2.jpg");
           });
           $("#ha43").click(function(){
-            $("#ha4").attr("src", "haian3.jpg");
+            $("#ha4").attr("src", "anh/haian3.jpg");
           });
           $("#ha51").click(function(){
-            $("#ha5").attr("src", "haian1.jpg");
+            $("#ha5").attr("src", "anh/haian1.jpg");
           });
           $("#ha52").click(function(){
-            $("#ha5").attr("src", "haian2.jpg");
+            $("#ha5").attr("src", "anh/haian2.jpg");
           });
           $("#ha53").click(function(){
-            $("#ha5").attr("src", "haian3.jpg");
+            $("#ha5").attr("src", "anh/haian3.jpg");
           });
           $("#ha61").click(function(){
-            $("#ha6").attr("src", "haian1.jpg");
+            $("#ha6").attr("src", "anh/haian1.jpg");
           });
           $("#ha62").click(function(){
-            $("#ha6").attr("src", "haian2.jpg");
+            $("#ha6").attr("src", "anh/haian2.jpg");
           });
           $("#ha63").click(function(){
-            $("#ha6").attr("src", "haian3.jpg");
+            $("#ha6").attr("src", "anh/haian3.jpg");
           });
           
         });
@@ -260,7 +277,7 @@ interval: 6000,
                             <div class="card">
                                 <div>
                                     <div class="d-flex pt-3 pl-3">
-                                        <div type="margin-left:10px"><img src="qr.png" width="100" height="100" style=" border-radius: 4px"/></div>
+                                        <div type="margin-left:10px"><img src="anh/qr.png" width="100" height="100" style=" border-radius: 4px"/></div>
                                         <div class="mt-3 pl-2"><span class="name">Du Quan Vu</span>
                                             <div><span class="cross">XXXX-XXXX-</span><span class="pin ml-2">3007</span></div>
                                         </div>
@@ -297,13 +314,14 @@ interval: 6000,
 
     
             <main>
-                <div class="home">
-                    <div class="parallax home__parallax home__parallax-img1 nen" data-rellax-speed="-19" >
+                <div class="home" style="background-color: #3ba8e0;">
+                    <div class="parallax home__parallax home__parallax-img1 nen" data-rellax-speed="-19" id='dvImage' >
+                        
                     </div>
                     <div class="parallax home__parallax home__parallax-img2 may1" data-rellax-speed="-17" ></div>
                     <div class="parallax home__parallax home__parallax-img3 may2" data-rellax-speed="-15.5" ></div>
                  
-                    <div class="parallax home__parallax home__parallax-img4 may3" data-rellax-speed="-18" >
+                    <div class="parallax home__parallax home__parallax-img4 may3" data-rellax-speed="-13" >
                        
                     </div>
                     <div class="parallax home__parallax home__parallax-img5 maybay" data-rellax-speed="-10" >
@@ -315,7 +333,7 @@ interval: 6000,
                     <div class="tencty">
                 
 
-                    <h1 class="parallax home__title headerx" data-rellax-speed="-10"  >Gooolloser </h1>
+                    <h1 class="parallax home__title headerx" data-rellax-speed="-9"  >Gooolloser </h1>
                    
                 </div >
                     
@@ -327,20 +345,19 @@ interval: 6000,
                                           <section class="container contact section header2" id="Booking" >
                                            
                                               
-                                              <div class=" bd-grid " id="myheader2" >
-                                            <div class="wrapper bg-white "  >
+                                              <div class=" bd-grid " id="myheader2">
+                                            <div class="wrapper bg-white " >
                                                 <form action="#">
                                               
-                                                    <div class="d-sm-flex margin border-bottom">
-                                                        <div>
-                                                            <img src="maybay.png" alt="" class="vietdu" data-speed=3>
-                                                            
-                                                        </div>
-                                                        <div class="d-flex p-2 align-items-center flex-fill ms-sm-1 my-sm-0 my-1 position-relative">
-                                                        </div>
+                                                    <div class="d-sm-flex margin border-bottom" >
+                                                        
+                                                        
                                                         <div class="d-flex p-2 align-items-center flex-fill ms-sm-1 my-sm-0 my-1   position-relative"> 
                                                         </div>
-                                            
+                                                        <div>
+                                                            <img src="anh/maybay.png" alt="" class="vietdu" data-speed=3>
+                                                            
+                                                        </div>
                                                         <div class="d-flex p-2 align-items-center flex-fill ms-sm-1 my-sm-0 my-1  position-relative "> 
                                                         </div>
                                                       
@@ -348,9 +365,9 @@ interval: 6000,
                                                    
                                                     <div class="form-group my-2 ">
                                             
-                                                        <button type="button" class="btn  d-flex justify-content-center text-center  p-3 search" onclick="myFunction2()"  ><i class='bx bx-search-alt-2 search' style="font-size: 50px;"></i></button>          </div>                                              
+                                                        <button type="button" class="btn  d-flex justify-content-center text-center  p-3 search" onclick="myFunction2()"  ><i class='bx bx-search-alt-2 search' style="font-size: 50px;"></i></button>          </div>                                            
                                                     </form>
-                                               
+                                                  
                                             </div>
                                         </div>
         
@@ -362,7 +379,7 @@ interval: 6000,
                                                 <div class="grid wide container thequan" >
                                                           <div class="prolayer-fly "  style="margin-top: 2%;">
                                                          <div class="prolayer3">              
-                                                         <img src="slide.jpg" width="40" height="10" alt="">
+                                                         <img src="anh/slide.jpg" width="40" height="10" alt="">
                                                         </div>
                                                         <div class="block-content">
                                                         <div class="prolay-full" style="display: flex;">
@@ -403,7 +420,7 @@ interval: 6000,
                                                    <div class="grid wide container thequan">
                                                     <div class="prolayer-fly " >
                                                    <div class="prolayer3">              
-                                                   <img src="slidep.png" width="40" height="10" alt="">
+                                                   <img src="anh/slidep.png" width="40" height="10" alt="">
                                                   </div>
                                                   <div class="block-content">
                                               <div class="prolay-full" style="display: flex;">
@@ -442,7 +459,7 @@ interval: 6000,
                                              <div class="grid wide container thequan">
                                                 <div class="prolayer-fly " >
                                                <div class="prolayer3">              
-                                               <img src="slidepr.png" width="40" height="10" alt="">
+                                               <img src="anh/slidepr.png" width="40" height="10" alt="">
                                               </div>
                                               <div class="block-content">
                                           <div class="prolay-full" style="display: flex;">
@@ -481,7 +498,7 @@ interval: 6000,
                                          <div class="grid wide container thequan">
                                             <div class="prolayer-fly" >
                                            <div class="prolayer3">              
-                                           <img src="slidepro.png" width="40" height="10" alt="">
+                                           <img src="anh/slidepro.png" width="40" height="10" alt="">
                                           </div>
                                           <div class="block-content">
                                       <div class="prolay-full" style="display: flex;">
@@ -523,7 +540,7 @@ interval: 6000,
                                  <div class="grid wide container thequan">
                                     <div class="prolayer-fly" >
                                    <div class="prolayer3">              
-                                   <img src="slidep.png" width="40" height="10" alt="">
+                                   <img src="anh/slidep.png" width="40" height="10" alt="">
                                   </div>
                                   <div class="block-content">
                               <div class="prolay-full" style="display: flex;">
@@ -562,7 +579,7 @@ interval: 6000,
                                                     <div class="grid wide container thequan">
                                                     <div class="prolayer-fly" >
                                                    <div class="prolayer3">              
-                                                   <img src="slidepr.png" width="40" height="10" alt="">
+                                                   <img src="anh/slidepr.png" width="40" height="10" alt="">
                                                    </div>
                                                    <div class="block-content">
                                                    <div class="prolay-full" style="display: flex;">
@@ -601,7 +618,7 @@ interval: 6000,
                                                    <div class="grid wide container thequan">
                                                     <div class="prolayer-fly" >
                                                    <div class="prolayer3">              
-                                                   <img src="slide.jpg" width="40" height="10" alt="">
+                                                   <img src="anh/slide.jpg" width="40" height="10" alt="">
                                                   </div>
                                                   <div class="block-content">
                                               <div class="prolay-full" style="display: flex;">
@@ -663,9 +680,9 @@ interval: 6000,
         
        
      
-            <section id="yasuo">
+            <section class="yasuo" id="yasuo">
                 <br>
-                <br>
+                
             </section>
 
             <section class="container   banner3 "  >
@@ -678,9 +695,9 @@ interval: 6000,
                                         <div class="col-md-7 col-12 order-md-1 order-2">
              
                                             <h4>Giảm 20% vé</h4>
-                                            <p>Cho lần mua tiếp theo trong vào 1 tháng gần nhất</p> <br> <a href="#">BUY NOW</a>
+                                            <p>Cho lần mua tiếp theo trong vào 1 tháng gần nhất</p> <br> <a href="#Booking">ĐẶT NGAY</a>
                                         </div>
-                                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="sale1.png"class="mx-auto" alt="slide"></div>
+                                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="anh/sale1.png"class="mx-auto" alt="slide"></div>
                                     </div>
                                 </div>
                             </div>
@@ -691,9 +708,9 @@ interval: 6000,
                                     <div class="row align-items-center">
                                         <div class="col-md-7 col-12 order-md-1 order-2">
                                             <h4>Combo du lịch</h4>
-                                            <p>Đặt ngay khu nghĩ dưỡng cao cấp kèm những mức giá hấp dẫn.</p> <br> <a href="#">BUY NOW</a>
+                                            <p>Đặt ngay khu nghĩ dưỡng cao cấp kèm những mức giá hấp dẫn.</p> <br> <a href="#bannerkhachsan">ĐẶT NGAY</a>
                                         </div>
-                                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="sale1.png" class="mx-auto" alt="slide"></div>
+                                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="anh/sale1.png" class="mx-auto" alt="slide"></div>
                                     </div>
                                 </div>
                             </div>
@@ -714,7 +731,7 @@ interval: 6000,
                         <div class="row  " >
                             <div class="col-sm anhdulich ">
                                 <div class="container d-flex justify-content-center">
-                                    <div class="card p-2 my-4"> <img src="haian1.jpg" height="560" id="ha1">
+                                    <div class="card p-2 my-4"> <img src="anh/haian1.jpg" height="560" id="ha1">
                                         <div class="text-white">
                                             <h4 style="color:aliceblue">HAIAN Beach Hotel & Spa</h4>
                                         </div>
@@ -749,7 +766,7 @@ interval: 6000,
                          <div class="row " >
                              <div class="col-sm anhdulich ">
                                  <div class="container d-flex justify-content-center">
-                                     <div class="card p-2 my-4"> <img src="haian1.jpg" height="560" id="ha2">
+                                     <div class="card p-2 my-4"> <img src="anh/haian1.jpg" height="560" id="ha2">
                                          <div class="text-white">
                                              <h4 style="color:aliceblue">HAIAN Beach Hotel & Spa</h4>
                                          </div>
@@ -785,7 +802,7 @@ interval: 6000,
                              <div class="row" >
                                  <div class="col-sm anhdulich">
                                      <div class="container d-flex justify-content-center ">
-                                         <div class="card p-2 my-4"> <img src="haian1.jpg" height="560" id="ha3">
+                                         <div class="card p-2 my-4"> <img src="anh/haian1.jpg" height="560" id="ha3">
                                              <div class="text-white">
                                                  <h4 style="color:aliceblue">HAIAN Beach Hotel & Spa</h4>
                                              </div>
@@ -821,7 +838,7 @@ interval: 6000,
                          <div class="row " >
                              <div class="col-sm anhdulich">
                                  <div class="container d-flex justify-content-center ">
-                                     <div class="card p-2 my-4"> <img src="haian1.jpg" height="560" id="ha4">
+                                     <div class="card p-2 my-4"> <img src="anh/haian1.jpg" height="560" id="ha4">
                                          <div class="text-white">
                                              <h4 style="color:aliceblue">HAIAN Beach Hotel & Spa</h4>
                                          </div>
@@ -857,7 +874,7 @@ interval: 6000,
                           <div class="row" >
                               <div class="col-sm anhdulich ">
                                   <div class="container d-flex justify-content-center">
-                                      <div class="card p-2 my-4"> <img src="haian1.jpg" height="560" id="ha5">
+                                      <div class="card p-2 my-4"> <img src="anh/haian1.jpg" height="560" id="ha5">
                                           <div class="text-white">
                                               <h4 style="color:aliceblue">HAIAN Beach Hotel & Spa</h4>
                                           </div>
@@ -892,7 +909,7 @@ interval: 6000,
                               <div class="row" >
                                   <div class="col-sm anhdulich">
                                       <div class="container d-flex justify-content-center">
-                                          <div class="card p-2 my-4"> <img src="haian1.jpg" height="560" id="ha6">
+                                          <div class="card p-2 my-4"> <img src="anh/haian1.jpg" height="560" id="ha6">
                                               <div class="text-white">
                                                   <h4 style="color:aliceblue">HAIAN Beach Hotel & Spa</h4>
                                               </div>
@@ -930,22 +947,22 @@ interval: 6000,
             </section>
 
 
-            <section class="yasuo"  >
+            <section class="yasuo1"  >
 
                 <div class="chungtoi" id="about">
                     <h2 class="about__subtitle">We're Team Good Loser</h2>
                     <span class="about__profession">Best Web Design-2021</span>
     
                     <p class="about__text">Sản phẩm được tạo ra bởi team Gloser Đại Học CNTT & TT Việt Hàn </p>
-                    <p class="about__text">Backgroud là tháp landmark 81, tất cả hình ảnh trong bài làm đều được lấy ở pexel.com là một trang web hoàn toàn miễn phí sử dụng ảnh ảnh </p>
+                    <p class="about__text"> Tất cả hình ảnh trong bài làm đều được lấy ở pexel.com là một trang web hoàn toàn miễn phí sử dụng ảnh ảnh </p>
                     <p class="about__text">Các công nghệ sử dụng trong trang web bao gồm #rellax.js #bootstrap5 #scrollreveal.js #jQuery.js  trang web được thực hiện để người dùng dễ dàng đưa nội dung lên web</p>
        
                     <p class="about__text">Hãy thử ấn    nút    tìm    kiếm    chuyến    bay    nếu    bạn    chưa    ấn   -   -   cảm    ơn    đã    xem    bài    mọi    thắc    mắt    xin    gửi    về    nvdu.20it6@vku.udn.vn"</p>
 
 
                     <div class="about__social">
-                        <a href="#" class="about__social-icon" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                        <a href="#" class="about__social-icon" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://github.com/vietdu/nbanbi" class="about__social-icon" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/vietdu/nbanbi" class="about__social-icon" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
                         <a href="https://github.com/vietdu/nbanbi" class="about__social-icon" target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>

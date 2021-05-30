@@ -223,12 +223,13 @@ img {
 }
 
 .home__parallax-img1 {
-  background-image: url("anh1.jpg");
+  
+  
   z-index: var(--z-normal);
 }
 
 .home__parallax-img2 {
-  background-image: url("anh2.png");
+  background-image: url("back.png");
   z-index: var(--z-tooltip);
 }
 
@@ -242,11 +243,6 @@ img {
   z-index: var(--z-fixed);
 }
 
-.home__parallax-img5 {
-  background-image: url("anh5.png");
-  
-  z-index: var(--z-fixed);
-}
 
 .home__parallax-img6 {
 
@@ -266,11 +262,16 @@ img {
 }
 
 .home__title {
-  font-size: var(--biggest-font-size);
+  font-size: 48px;
   z-index: var(--z-normal);
   color:#c1c9da;
 
 }
+.home__title {
+  top: 30%;
+  left:41.8%;
+}
+
 
 .home__title1 {
   left: 60%;
@@ -282,7 +283,7 @@ img {
   top: 50%;
   font-size: var(--h2-font-size);
  
-  z-index: var(--z-tooltip);
+  z-index: var(--z-fixed);
  
 }
 
@@ -394,10 +395,7 @@ img {
   }
 }
 
-.home__title {
-  top: 9%;
-  left:3%;
-}
+
 
 
 
@@ -802,6 +800,7 @@ display: none;
 
 
 @media screen and (max-width: 900px) {
+ 
   .thequan{
     background-color: blanchedalmond;
     height: auto;
@@ -1601,7 +1600,7 @@ margin-left: auto;
 	background-image:-webkit-linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: hue 10s infinite linear;
+	-webkit-animation: hue 70s infinite linear;
 }
 
 @-webkit-keyframes hue {
@@ -1657,7 +1656,7 @@ margin-left: auto;
   color: #fff;
   line-height: 100%;
   letter-spacing: 0.5px;
-  font-weight: 600;
+  font-weight: 100;
 }
 .banner3 #myCarousel p {
   font-size: 24px;
@@ -1715,12 +1714,13 @@ margin-left: auto;
 }
 .banner3 .carousel-control-next, .banner3 .carousel-control-prev {
   height: 40px;
-  width: 60px;
+  width: 40px;
   padding: 12px;
   top: 50%;
   bottom: auto;
   transform: translateY(-50%);
-  background-color: #f00;
+  background-color: rgb(44, 6, 150);
+  border-radius: 4px;
 }
 .banner3 .carousel-item {
   position: relative;
@@ -1853,4 +1853,8 @@ margin-left: auto;
   background-color: blanchedalmond;
 
   border-radius: 5px;
+}
+.yasuo{
+  margin-top :-150px;
+  margin-bottom: 100px;
 }

@@ -13,9 +13,9 @@ const navMenu = document.getElementById('nav-menu'),
     closetkbay1=document.getElementById('outtkbay1'),
     closedangnhap2=document.getElementById('dangnhap2'),
     closedangnhap3=document.getElementById('dangnhap3'),
-    closedangnhap4=document.getElementById('out'),
-    closedangnhap5=document.getElementById('out1'),
-    closebay=document.getElementById('outtkbay'),
+  
+ 
+
     clicktt=document.getElementById('bay'),
     clicktt1=document.getElementById('bay1'),
     clicktt2=document.getElementById('bay2'),
@@ -98,15 +98,8 @@ closedangnhap3.addEventListener('click', ()=>{
   dangnkyMenu.classList.add('dangky'),
   dangnhapMenu.classList.remove('andangnhap')
 })
-closedangnhap4.addEventListener('click', ()=>{
-  dangnhapMenu.classList.add('showdangnhap')
-  
-})
-closedangnhap5.addEventListener('click', ()=>{
-  
-  dangnkyMenu.classList.add('dangky')
-  
-})
+
+
 
 closetkbay1.addEventListener('click', ()=>{
   
@@ -118,13 +111,7 @@ closetkbay1.addEventListener('click', ()=>{
   
 })
 
-closebay.addEventListener('click', ()=>{
-  
-  hienthibay.classList.toggle('andangnhap'),
-  hienthibay.classList.remove('dangky')
- 
-  
-})
+
 
 
 

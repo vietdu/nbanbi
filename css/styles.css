@@ -126,7 +126,7 @@ img {
 
 
 .nav {
-  height: var(--header-height) ;
+  height: var(--header-height);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1029,6 +1029,14 @@ color:#3948b1;
   
 
 }
+.form1{
+  width: 1090px;
+  padding: 0rem 0rem;
+  border-radius: 1rem;
+  margin-top: -4%;
+  
+
+}
 .form__title{
   font-weight: 200;
   margin-bottom: 5rem;
@@ -1256,6 +1264,17 @@ input:focus {
   .quan{
     width: 1000px;
   }
+  .banner3 {
+    -webkit-transform: scale(0.94);
+            transform: scale(0.94);
+  }
+  .home__title{
+    font-size: 38px;
+  
+      top: 32%;
+      left:42.2%;
+    
+  }
 
 }
 
@@ -1279,6 +1298,13 @@ input:focus {
 }
 
 @media screen and (max-width: 700px) {
+  .home__title{
+    font-size: 38px;
+  
+      top: 32%;
+      left:28.5%;
+    
+  }
   .fl-wrap {
     float: left;
     width: 120px;
@@ -1600,7 +1626,7 @@ margin-left: auto;
 	background-image:-webkit-linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: hue 70s infinite linear;
+	-webkit-animation: hue 40s infinite linear;
 }
 
 @-webkit-keyframes hue {
@@ -1857,4 +1883,104 @@ margin-left: auto;
 .yasuo{
   margin-top :-150px;
   margin-bottom: 100px;
+}
+
+.dangnhapwi * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.dangnhapwi body {
+  height: 120vh;
+
+  background: linear-gradient(to top, #c9c9ff 50%, #9090fa 90%) no-repeat;
+}
+.dangnhapwi .container {
+  margin-left: -33.8%;
+  margin-top: 5%;
+}
+.dangnhapwi .panel-heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.dangnhapwi #forgot {
+  min-width: 100px;
+  margin-left: auto;
+  text-decoration: none;
+}
+.dangnhapwi a:hover {
+  text-decoration: none;
+}
+.dangnhapwi .form-inline label {
+  padding-left: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+.dangnhapwi .btn.btn-primary {
+  margin-top: 20px;
+  border-radius: 15px;
+}
+.dangnhapwi .panel {
+  min-height: 380px;
+  box-shadow: 20px 20px 80px #dadada;
+  border-radius: 12px;
+}
+.dangnhapwi .input-field {
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  color: #4343ff;
+}
+.dangnhapwi input[type='text'], .dangnhapwi input[type='password'] {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+}
+.dangnhapwi .fa-eye-slash.btn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.dangnhapwi img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+.dangnhapwi a[target='_blank'] {
+  position: relative;
+  transition: all 0.1s ease-in-out;
+}
+.dangnhapwi .bordert {
+  border-top: 1px solid #aaa;
+  position: relative;
+}
+.dangnhapwi .bordert:after {
+  content: "hoặc đăng nhập";
+  position: absolute;
+  top: -13px;
+  left: 33%;
+  background-color: #fff;
+  padding: 0px 8px;
+}
+@media (max-width: 360px) {
+  .dangnhapwi #forgot {
+    margin-left: 0;
+    padding-top: 10px;
+ }
+  .dangnhapwi body {
+    height: 100%;
+ }
+  .dangnhapwi .container {
+    margin: 30px 0;
+ }
+  .dangnhapwi .bordert:after {
+    left: 25%;
+ }
 }

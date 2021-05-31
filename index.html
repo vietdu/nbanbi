@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/styles.css">
 
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link rel="icon" href="anh/logo.png" sizes="16x16" type="png"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -26,7 +27,7 @@ var images = ["anh/kiquan1.jpg", "anh/kiquan2.jpg", "anh/kiquan3.jpg", "anh/kiqu
               $(this).css("background-image", "url(" + images[i] + ")");
               $(this).fadeIn("slow");
           });
-      }, 10000);
+      }, 20000);
   });
            
         $(document).ready(function(){
@@ -137,33 +138,11 @@ interval: 6000,
                     
                 </div>
                 
-                <form action="" class="form dn showdangnhap"  id="dangnhap-menu" >
-                   
-                    <div class="form__out">
-                        <a style="cursor: pointer;" id="out"><i class='bx bx-x out'></i></a>                        
-                     </div>
-                    <div class="form__div">
-                
-                        <input type="text" class="form__input" placeholder=" ">
-                        <label for="" class="form__label">Tên ID</label>
-                    </div>
-    
-                    <div class="form__div">
-                        <input type="password" class="form__input" placeholder=" ">
-                        <label for="" class="form__label">Mật khẩu</label>
-                    </div>
-    
-                  
-                    
-                  <a style="cursor: pointer;font-size: 28px;color:#10505b;padding-left: 5x;" id="dangnhap">        <i class='bx bx-log-in'></i></a> </br>
-                
-                   
-                    <a style="cursor: pointer;font-size: 28px;color:#10505b;padding-left: 6px;" id="dangnhap2">    <i class='bx bx-user-plus'></i></i></a> 
-                </form>
+   
                 <form action="" class="form dangky" id="dangky-menu">
                     
                     <div class="form__out">
-                        <a style="cursor: pointer;" id="out1"><i class='bx bx-x out'></i></a>                        
+                        <br>                       
                      </div>
                     <div class="form__div">
                     
@@ -187,14 +166,43 @@ interval: 6000,
                   
                     <a style="cursor: pointer;font-size: 28px;color:#10505b;padding-left: 6px;" id="dangnhap3">  <i class='bx bx-user-check'></i></i></a> 
                     </form>
+                    <form class="form1 dangnhapwi showdangnhap"  id="dangnhap-menu" >
+                        <div class="container">
+                            <div class="row">
+                                <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                                    <div class="panel border bg-white">
+                                        <div class="panel-heading">
+                                            <h3 class="pt-3 font-weight-bold">Đăng nhập</h3>
+                                        </div>
+                                        <div class="panel-body p-3">
+                                            <form action="login_script.php" method="POST">
+                                                <div class="form-group py-2">
+                                                    <div class="input-field"> <span class="far fa-user p-2"></span> <input type="text" placeholder="Tên hoặc email" required> </div>
+                                                </div>
+                                                <div class="form-group py-1 pb-2">
+                                                    <div class="input-field"> <span class="fas fa-lock px-2"></span> <input type="password" placeholder="Nhập mật khẩu" required> <button class="btn bg-white text-muted"> <span class="far fa-eye-slash"></span> </button> </div>
+                                                </div>
+                                                <div class="form-inline"> <input type="checkbox" name="remember" id="remember"> <label for="remember" class="text-muted">Nhớ mật khẩu</label> <a href="#" id="forgot" class="font-weight-bold">Quên mật khẩu?</a> </div>
+                                                <div class="btn btn-primary btn-block mt-3" id="dangnhap">Đăng nhập</div>
+                                                <div class="text-center pt-4 text-muted">Bạn chưa có tài khoản? <a href="#" id="dangnhap2">Đăng ký</a> </div>
+                                            </form>
+                                        </div>
+                                        <div class="mx-3 my-2 py-2 bordert">
+                                            <div class="text-center py-3"> <a href="https://wwww.facebook.com" target="_blank" class="px-2"> <img src="anh/fb.png" alt=""> </a> <a href="https://www.google.com" target="_blank" class="px-2"> <img src="anh/google.png" alt=""> </a> <a href="https://www.github.com" target="_blank" class="px-2"> <img src="anh/github.png" alt=""> </a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
          
   
                     <form class="tkbay" id='tkbay' >
-                        <div class="form__out">
-                            <a style="cursor: pointer;" id="outtkbay"><i class='bx bx-x outbay'></i></a>                        
+                        <div>
+                           <br>                    
                          </div>
 
-                        <div class="the shadow mb-5 bg-white rounded" >
+                        <div class="the shadow mb-5 bg-white rounded">
                             <div class="the-body">
                                 <p class="the-title text-center shadow mb-5 rounded" style="background-color: #2f3569;">Tìm chyến bay</p>
                                 <div class="icons text-center">

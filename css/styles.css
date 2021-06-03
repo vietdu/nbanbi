@@ -801,6 +801,7 @@ display: none;
 
 @media screen and (max-width: 900px) {
  
+ 
   .thequan{
     background-color: blanchedalmond;
     height: auto;
@@ -1029,14 +1030,7 @@ color:#3948b1;
   
 
 }
-.form1{
-  width: 1090px;
-  padding: 0rem 0rem;
-  border-radius: 1rem;
-  margin-top: -4%;
-  
 
-}
 .form__title{
   font-weight: 200;
   margin-bottom: 5rem;
@@ -1256,6 +1250,18 @@ input:focus {
   box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3)
 }
 @media screen and (max-width: 1500px) {
+  .form1{
+    width: 1090px;
+    padding: 0rem 0rem;
+    border-radius: 1rem;
+    margin-top: -4%;
+    
+  
+  }
+  .diadiem{
+
+    margin-right:150px;
+  }
   .fl-wrap {
     float: left;
     width: 230%;
@@ -1267,6 +1273,7 @@ input:focus {
   .banner3 {
     -webkit-transform: scale(0.94);
             transform: scale(0.94);
+            
   }
   .home__title{
     font-size: 38px;
@@ -1279,6 +1286,18 @@ input:focus {
 }
 
 @media screen and (min-width: 1500px) {
+  .form1{
+    width: 1090px;
+    padding: 0rem 0rem;
+    border-radius: 1rem;
+    margin-top: -4%;
+    
+  
+  }
+  .diadiem{
+
+    margin-right:150px;
+  }
   .fl-wrap {
     float: left;
     width: 290%;
@@ -1298,6 +1317,20 @@ input:focus {
 }
 
 @media screen and (max-width: 700px) {
+  .form1{
+    width: 300px;
+    padding: 0rem 0rem;
+    border-radius: 1rem;
+    margin-top: -4%;
+    margin-left: 35%;
+    
+    
+  
+  }
+  .diadiem{
+
+    margin-right:0px;
+  }
   .home__title{
     font-size: 38px;
   
@@ -1984,3 +2017,4 @@ margin-left: auto;
     left: 25%;
  }
 }
+

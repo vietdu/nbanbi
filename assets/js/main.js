@@ -13,8 +13,12 @@ const navMenu = document.getElementById('nav-menu'),
     closetkbay1=document.getElementById('outtkbay1'),
     closedangnhap2=document.getElementById('dangnhap2'),
     closedangnhap3=document.getElementById('dangnhap3'),
-  
- 
+    clickks1=document.getElementById('san1'),
+    clickks2=document.getElementById('san2'),
+    clickks3=document.getElementById('san3'),
+    clickks4=document.getElementById('san4'),
+    clickks5=document.getElementById('san5'),
+    clickks6=document.getElementById('san6'),
 
     clicktt=document.getElementById('bay'),
     clicktt1=document.getElementById('bay1'),
@@ -23,13 +27,27 @@ const navMenu = document.getElementById('nav-menu'),
     clicktt4=document.getElementById('bay4'),
     clicktt5=document.getElementById('bay5'),
     clicktt6=document.getElementById('bay6'),
-    thoattt=document.getElementById('thoattt'),
-    clickks1=document.getElementById('san1'),
-    clickks2=document.getElementById('san2'),
-    clickks3=document.getElementById('san3'),
-    clickks4=document.getElementById('san4'),
-    clickks5=document.getElementById('san5'),
-    clickks6=document.getElementById('san6')
+    thoattt=document.getElementById('thoattt')
+
+
+    clickks1.addEventListener('click', ()=>{
+      hienthithanhtoan.classList.add('thanhtoanshow')
+   }) clickks2.addEventListener('click', ()=>{
+    hienthithanhtoan.classList.add('thanhtoanshow')
+ })
+      
+      clickks3.addEventListener('click', ()=>{
+        hienthithanhtoan.classList.add('thanhtoanshow')
+     })
+      clickks4.addEventListener('click', ()=>{
+        hienthithanhtoan.classList.add('thanhtoanshow')
+     })
+      clickks5.addEventListener('click', ()=>{
+        hienthithanhtoan.classList.add('thanhtoanshow')
+     })
+      clickks6.addEventListener('click', ()=>{
+        hienthithanhtoan.classList.add('thanhtoanshow')
+     })
    
 
     thoattt.addEventListener('click', ()=>{

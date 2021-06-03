@@ -32,7 +32,8 @@ const navMenu = document.getElementById('nav-menu'),
 
     clickks1.addEventListener('click', ()=>{
       hienthithanhtoan.classList.add('thanhtoanshow')
-   }) clickks2.addEventListener('click', ()=>{
+   })
+   clickks2.addEventListener('click', ()=>{
     hienthithanhtoan.classList.add('thanhtoanshow')
  })
       
@@ -48,7 +49,7 @@ const navMenu = document.getElementById('nav-menu'),
       clickks6.addEventListener('click', ()=>{
         hienthithanhtoan.classList.add('thanhtoanshow')
      })
-   
+    
 
     thoattt.addEventListener('click', ()=>{
       hienthithanhtoan.classList.remove('thanhtoanshow')

@@ -1909,9 +1909,16 @@ margin-left: auto;
 
 
 .thequan{
-  background-color: blanchedalmond;
-
+  background-color: rgb(255, 255, 255);
+  
   border-radius: 5px;
+}
+.thequan:hover{
+  background-color: #faaca81f;
+background-image: linear-gradient(19deg, #faaca86b 0%rgba(221, 214, 243, 0.349)F3 100%);
+
+  
+
 }
 .yasuo{
   margin-top :-150px;

@@ -9,7 +9,7 @@
   --first-color-darken: #A83E51;
   --white-color: #FCF8F8;
 
-  --body-font: 'Poppins', sans-serif;
+
   --big-font-size: 2.5rem;
   --normal-font-size: .938rem;
 
@@ -40,7 +40,7 @@
 
 
 :root {
-  --body-font: 'Open Sans', sans-serif;
+  --body-font:'Raleway', sans-serif;
   --biggest-font-size: 3.5rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
@@ -120,7 +120,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #3ba8e0;
+  background-color: #aacfc2;
   z-index: 2000;
 }
 
@@ -182,12 +182,15 @@ img {
 
 .nav__logo {
   padding-left: 20px;
-  font-size: 30px;
+
+  font-size: 24px;
+  font-weight: 20;
  
 }
 
 .nav__link {
-  color: #ffffff;
+  color: #080a13;
+  font-weight: 20;
 }
 
 .nav__link:hover {
@@ -229,12 +232,12 @@ img {
 }
 
 .home__parallax-img2 {
-  background-image: url("back.png");
+  background-image: url("background1.png");
   z-index: var(--z-tooltip);
 }
 
 .home__parallax-img3 {
-  background-image: url("anh3.png");
+  background-image: url("background2.png");
   z-index: var(--z-fixed);
 }
 
@@ -262,14 +265,14 @@ img {
 }
 
 .home__title {
-  font-size: 48px;
+  font-size: 68px;
   z-index: var(--z-normal);
   color:#c1c9da;
 
 }
 .home__title {
-  top: 30%;
-  left:41.8%;
+  top: 40%;
+  left:10%;
 }
 
 
@@ -280,8 +283,11 @@ img {
 }
 
 .home__subtitle {
-  top: 50%;
-  font-size: var(--h2-font-size);
+  color: #000;
+  top: 55%;
+  left: 10%;
+  font-size: 34px;
+  font-weight: bold;
  
   z-index: var(--z-fixed);
  
@@ -489,12 +495,12 @@ img {
 
 
 .search {
-  font-size: 2rem;
-  color: #747692;
+  outline: none;
+  color: #01021d;
 }
 
 .search :hover {
-  color: #10a7c2;
+  color: #ffffff;
 }
 
 .banner {
@@ -557,7 +563,7 @@ img {
   opacity: 1;
   width: 970px;
   height: 500px;
-  padding: 2rem 0;
+  padding: 1rem 0;
 margin-bottom: 2%;
   color: var(--white-color);
   background-color: white;
@@ -589,32 +595,20 @@ margin-bottom: 2%;
   padding: 2rem 0;
   margin-top: 2%;
   color: var(--white-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: -webkit-transform 2s ease-in-out;
-  transition: -webkit-transform 2s ease-in-out;
-  transition: transform 2s ease-in-out;
-  transition: transform 2s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  border-radius: 12px;
+ 
+  
+  background-color: #efe5fe;
+  transform: scale(0.94);
 }
 
 .banner1 {
   background-color: #FFDEE9;
-  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  background-image: url(anime10.jpg);
   
   
   
-  transform: scale(0.98);
+  transform: scale(0.96);
   border-radius: 10px;
   
 }
@@ -628,9 +622,11 @@ margin-bottom: 2%;
 
 .banner3 {
   border-radius: 10px;
-  background-color: #aecbdb;
+
+ 
 
 }
+
 
 
 
@@ -640,11 +636,11 @@ margin-bottom: 2%;
 .chungtoi {
   margin-top: 10%;
   padding-top: 5%;
-  background-color:#43485b ;
+  background-color:#09011f ;
 }
 
 .header2{
-  height:800px;
+  height:600px;
   background-color: rgb(255, 255, 255);
   margin :0;
  
@@ -855,11 +851,7 @@ display: none;
  .bannery{
    height:500px;
  }
-.home__title{
-  top:8%;
-  left:30%;
 
-}
 .header2{
   height: auto;
 }
@@ -1270,18 +1262,9 @@ input:focus {
   .quan{
     width: 1000px;
   }
-  .banner3 {
-    -webkit-transform: scale(0.94);
-            transform: scale(0.94);
-            
-  }
-  .home__title{
-    font-size: 38px;
-  
-      top: 32%;
-      left:42.2%;
-    
-  }
+
+
+
 
 }
 
@@ -1300,7 +1283,7 @@ input:focus {
   }
   .fl-wrap {
     float: left;
-    width: 290%;
+    width: 280%;
     position: relative
   }
   .thequan{
@@ -1309,8 +1292,9 @@ input:focus {
  
   }
   .banner3 {
-    -webkit-transform: scale(0.94);
-            transform: scale(0.94);
+    -webkit-transform: scale(0.96);
+            transform: scale(0.96);
+  
   }
   
  
@@ -1331,27 +1315,30 @@ input:focus {
 
     margin-right:0px;
   }
+  .home__subtitle{
+    top: 63%;
+  }
   .home__title{
-    font-size: 38px;
+    font-size: 68px;
   
-      top: 32%;
-      left:28.5%;
+      top: 50%;
+      left:10%;
     
   }
   .fl-wrap {
     float: left;
-    width: 120px;
+    width: 200px;
     position: relative
   }
   .nuttk{
-    width:120px;
+    width:200px;
   }
   .quan{
     width: auto;
   }
   .banner3 {
-    -webkit-transform: scale(0.86);
-            transform: scale(0.86);
+    -webkit-transform: scale(0.88);
+            transform: scale(0.88);
   }
 
 
@@ -1432,14 +1419,15 @@ input:focus {
   width: 340px;
   border: none;
   border-radius: 12px;
-  position: relative
+  position: relative;
+ 
 }
 
 .anhdulich img {
   border-radius: 12px
 }
 
-.anhdulich div .text-white {
+.anhdulich  .text-white {
   position: absolute;
   top: 5%;
   left: 10%;
@@ -1447,7 +1435,7 @@ input:focus {
   font-size: 28px
 }
 
-.anhdulich div .text-muted {
+.anhdulich .text-muted {
   position: absolute;
   top: 30%;
   left: 10%;
@@ -1659,7 +1647,7 @@ margin-left: auto;
 	background-image:-webkit-linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: hue 40s infinite linear;
+	-webkit-animation: hue 20s infinite linear;
 }
 
 @-webkit-keyframes hue {
@@ -1712,7 +1700,7 @@ margin-left: auto;
 .banner3 #myCarousel h4 {
   font-size: 100px;
   margin-bottom: 15px;
-  color: #fff;
+  color: #da463c;
   line-height: 100%;
   letter-spacing: 0.5px;
   font-weight: 100;
@@ -1720,7 +1708,7 @@ margin-left: auto;
 .banner3 #myCarousel p {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #d5d5d5;
+  color: #da463c;
 }
 .banner3 #myCarousel .carousel-item a {
   background: #f00;
@@ -1914,7 +1902,7 @@ margin-left: auto;
   border-radius: 5px;
 }
 .thequan:hover{
-  background-color: #faaca81f;
+  background-color: #2774a752;
 background-image: linear-gradient(19deg, #faaca86b 0%rgba(221, 214, 243, 0.349)F3 100%);
 
   
@@ -2024,4 +2012,5 @@ background-image: linear-gradient(19deg, #faaca86b 0%rgba(221, 214, 243, 0.349)F
     left: 25%;
  }
 }
+
 

@@ -1,1265 +1,179 @@
-<!DOCTYPE html>
-<html lang='vi'>
-    <head>
-        <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <title>GLoser</title>
-
-        <link rel='stylesheet' href='css/styles.css'>
-
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
-        <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x' crossorigin='anonymous'>
-        <link rel='icon' href='anh/logo.png' sizes='16x16' type='png'> 
-        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-        <script>
-null
-var images = ['anh/kiquan1.jpg', 'anh/kiquan2.jpg', 'anh/kiquan3.jpg', 'anh/kiquan5.jpg',];
-  $(function () {
-      var i = 0;
-      $('#dvImage').css('background-image', 'url(' + images[i] + ')');
-      setInterval(function () {
-          i++;
-          if (i == images.length) {
-              i = 0;
-          }
-          $('#dvImage').fadeOut('slow', function () {
-              $(this).css('background-image', 'url(' + images[i] + ')');
-              $(this).fadeIn('slow');
-          });
-      }, 20000);
-  });
-           
-        $(document).ready(function(){
-            $('#myCarousel').carousel({
-interval: 6000,
-});
-          $('#haian11').click(function(){
-            $('#haian1').attr('src', 'anh/haian1.jpg');
-          });
-          $('#haian12').click(function(){
-            $('#haian1').attr('src', 'anh/haian2.jpg');
-          });
-          $('#haian13').click(function(){
-            $('#haian1').attr('src', 'anh/haian3.jpg');
-          });          $('#rosamia11').click(function(){
-            $('#rosamia1').attr('src', 'anh/rosamia1.jpg');
-          });
-          $('#rosamia12').click(function(){
-            $('#rosamia1').attr('src', 'anh/rosamia2.jpg');
-          });
-          $('#rosamia13').click(function(){
-            $('#rosamia1').attr('src', 'anh/rosamia3.jpg');
-          });          $('#vinpearl11').click(function(){
-            $('#vinpearl1').attr('src', 'anh/vinpearl1.jpg');
-          });
-          $('#vinpearl12').click(function(){
-            $('#vinpearl1').attr('src', 'anh/vinpearl2.jpg');
-          });
-          $('#vinpearl13').click(function(){
-            $('#vinpearl1').attr('src', 'anh/vinpearl3.jpg');
-          });          $('#dlg11').click(function(){
-            $('#dlg1').attr('src', 'anh/dlg1.jpg');
-          });
-          $('#dlg12').click(function(){
-            $('#dlg1').attr('src', 'anh/dlg2.jpg');
-          });
-          $('#dlg13').click(function(){
-            $('#dlg1').attr('src', 'anh/dlg3.jpg');
-          });          $('#golden11').click(function(){
-            $('#golden1').attr('src', 'anh/golden1.jpg');
-          });
-          $('#golden12').click(function(){
-            $('#golden1').attr('src', 'anh/golden2.jpg');
-          });
-          $('#golden13').click(function(){
-            $('#golden1').attr('src', 'anh/golden3.jpg');
-          });          $('#hilton11').click(function(){
-            $('#hilton1').attr('src', 'anh/hilton1.jpg');
-          });
-          $('#hilton12').click(function(){
-            $('#hilton1').attr('src', 'anh/hilton2.jpg');
-          });
-          $('#hilton13').click(function(){
-            $('#hilton1').attr('src', 'anh/hilton3.jpg');
-          });          
-        });
-
-        
-        </script>
-  
-
-    </head>
-
-        <body>
-
-        <header class='l-header'>
-            <nav class='nav bd-grid'>
-   
-                <div>
-                    <a href='#' class='nav__logo' style='text-decoration: none;font-size:24'>GL</a>
-                </div>
-                <div class='thongbao' >
-                   <a  style='text-decoration: none' href='#Booking' class='nav__link '><i class='bx bxs-plane' ></i> CHUYẾN BAY</a>
-                    
-                    <a style='text-decoration: none' href='#yasuo' class='nav__link dancach'><i class='bx bx-heart-circle'></i> KHÁM PHÁ</a>
-                 <a style='text-decoration: none' href='#bannerkhachsan' class='nav__link active'><i class='bx bx-home-circle'></i> KHÁCH SẠN</a>
-            </div>
-
-        
-
-        <form action ='trangchu#bannerkhachsan' class='diadiem'>
-            <div class='main-search-input-wrap'   >
-                <div class='main-search-input fl-wrap '>
-                    <div > <input type='text' value='' name='timdiadiem' placeholder='Bạn muốn đến...'  class='nuttk'> </div> 
-                    <button  class='main-search-button '><i class='bx bx-search-alt'style='font-size:28px;color: rgb(38, 0, 255);'></i> </button>
-                </div>
-            </div>
-        </form>    
-                <div class='nav__toggle' id='nav-toggle'>
-                    <i class='bx bx-customize'></i>
-                   
-                </div>
-                
-
-                <div class='nav__menu' id='nav-menu'>
-                 
-                     <div style='text-align: center;cursor: pointer; '>
-                  
-               
-
-                
-                        <a style='text-decoration: none ;color:#2f3569;'  class='' id='dangnhap1'><i class='bx bx-user font-weight-bold'></i> Tài khoản</a>
-                        <a style='text-decoration: none;color:#2f3569'  class='dancach1 ' id='outtkbay1' ><i class='bx bxs-plane-alt font-weight-bold'></i> Chuyến bay</a>
-       
-                    
-                </div>
-                
-   
-                <form action='' class='form dangky' id='dangky-menu'>
-                    
-                    <div class='form__out'>
-                        <br>                       
-                     </div>
-                    <div class='form__div'>
-                    
-                        <input type='text' name='email' class='form__input' required placeholder=' '>
-                        <label for='' class='form__label'>Email</label>
-                    </div>
-                    <div class='form__div'>
-                        <input type='text' name='sdt' class='form__input' required placeholder=' '>
-                        <label for='' class='form__label'>Số điện thoại</label>
-                    </div>
-                    <div class='form__div'>
-                        <input type='text' name='iddangky' class='form__input' required placeholder=' '>
-                        <label for='' class='form__label'>Tên ID</label>
-                    </div>
-    
-                    <div class='form__div'>
-                        <input type='password' name='mkdangky' class='form__input' required  placeholder=' '>
-                        <label for='' class='form__label'>Mật khẩu</label>
-                    </div>
-    
-                  
- <button class='btn btn-primary btn-block mt-3' id='dangnhap3' style='width: 240px;'>Đăng ký</button>
-                    </form>
-  <form action='' class='form1 dangnhapwi showdangnhap'  id='dangnhap-menu' >
-                        <div class='container'>
-                            <div class='row'>
-                                <div class='offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3'>
-                                    <div class='panel border bg-white'>
-                                        <div class='panel-heading'>
-                                            <h3 class='pt-3 font-weight-bold'>Đăng nhập</h3>
-                                        </div>
-                                        <div class='panel-body p-3'>
-                                            <form action='login_script.php' method='POST'>
-                                                <div class='form-group py-2'>
-                                                    <div class='input-field'> <span class='far fa-user p-2'></span> <input name='iddangnhap' type='text' placeholder='Tên ID' required> </div>
-                                                </div>
-                                                <div class='form-group py-1 pb-2'>
-                                                    <div class='input-field'> <span class='fas fa-lock px-2'></span> <input name='mkdangnhap' type='password' placeholder='Nhập mật khẩu' required> <button class='btn bg-white text-muted'> <span class='far fa-eye-slash'></span> </button> </div>
-                                                </div>
-                                                <div class='form-inline'> <input type='checkbox' name='remember' id='remember'> <label for='remember' class='text-muted'>Nhớ mật khẩu</label> <a href='#' id='forgot' class='font-weight-bold'>Quên mật khẩu?</a> </div>
-                                                <div class='btn btn-primary btn-block mt-3' id='dangnhap'><button style='background-color:#0d6dfd00;border:none'>Đăng nhập</button></div>
-                                                <div class='text-center pt-4 text-muted'>Bạn chưa có tài khoản? <a href='#' id='dangnhap2'>Đăng ký</a> </div>
-                                            </form>
-                                        </div>
-                                        <div class='mx-3 my-2 py-2 bordert'>
-                                            <div class='text-center py-3'> <a href='https://wwww.facebook.com' target='_blank' class='px-2'> <img src='anh/fb.png' alt=''> </a> <a href='https://www.google.com' target='_blank' class='px-2'> <img src='anh/google.png' alt=''> </a> <a href='https://www.github.com' target='_blank' class='px-2'> <img src='anh/github.png' alt=''> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>         
-  
-                    <form method='GET' action ='trangchu#Booking'class='tkbay' id='tkbay'  >
-                        <div>
-                           <br>                    
-                         </div>
-
-                        <div class='the shadow mb-5 bg-white rounded'>
-                            <div class='the-body'>
-                                <p class='the-title text-center shadow mb-5 rounded' style='background-color: #2f3569;'>Tìm chyến bay</p>
-                                <div class='icons text-center'>
-                                    <i class='bx bxs-plane ' style='color:#c1c9da;font-size: 30px;'></i>
-                                <hr>
-                              
-                                <div class='row mb-3 mt-3'>  <label class='radiobtn' style='color:#10505b'><input type='checkbox' name='gender' value='male' style='color:#10505b'>Khứ hồi</label> </div>
-                                <div class='row'>
-                                    <div class='col-sm-6' > <select name='gadi' class='browser-default custom-select mb-4' id='select' required style='color:#10505b'>
-                                            <option value='' disabled='' selected='' name='gadi' style='color:#10505b'>Gas đi</option>
-                                            <option value='DAD' style='color:#777a80'>DAD</option>
-                                            <option value='HAN' style='color:#777a80'>HAN</option>
-                                            <option value='SGN' style='color:#777a80'>SGN</option>
-                                        </select> </div>
-                                    <div class='col-sm-6'> <select name='gaden' class='browser-default custom-select mb-4' id='select' required style='color:#10505b'>
-                                            <option value='' disabled='' selected='' style='color:#10505b' >Gas đến</option>
-                                            <option value='DAD' style='color:#777a80'>DAD</option>
-                                            <option value='HAN' style='color:#777a80'>HAN</option>
-                                            <option value='SGN' style='color:#777a80'>SGN</option>
-                                        </select> </div>
-                                </div>
-                                <div class='row' >
-                                    <div class='col-sm-6' style='color:#10505b'> <input  type='date'  placeholder='mm/dd/yyyy' class='form-control datepicker'  style='font-family:Arial, FontAwesome; color:#10505b'> </div>
-                                    <div class='col-sm-6' style='color:#10505b'> <input type='date'  placeholder='mm/dd/yyyy' class='form-control datepicker'  style='font-family:Arial, FontAwesome; color:#10505b'> </div>
-                                </div>
-                                <div class='row mt-4'>
-                                    <div class='col-sm-6'> <select class='browser-default custom-select mb-4' id='select' style='color:#10505b'>
-                                            <option value='' disabled='' selected='' color:#777a80>Thời gian</option>
-                                            <option value='1' style='color:#10505b'>4:00 AM</option>
-                                            <option value='2'style='color:#10505b'>3:00 PM</option>
-                                            <option value='3' style='color:#10505b'>8:00 PM</option>
-                                        </select> </div>
-                                    <div class='col-sm-6'> <select class='browser-default custom-select mb-4' id='select' style='color:#10505b'>
-                                            <option value='' disabled='' selected='' color:#777a80>Thời gian</option>
-                                            <option value='1' style='color:#10505b'>4:00 AM</option>
-                                            <option value='2' style='color:#10505b'>4:00 PM</option>
-                                            <option value='3' style='color:#10505b'>10:00 PM</option>
-                                        </select> </div>
-                                </div>
-                                <div class='row'>
-                                    <div class='col-sm-4'> <select class='browser-default custom-select mb-4' id='select' style='color:#10505b'>
-                                            <option value='' disabled='' selected=''>Trẻ(0-14)</option>
-                                            <option value='1'>0</option>
-                                            <option value='2'>1</option>
-                                            <option value='3'>2</option>
-                                            <option value='3'>3</option>
-                                        </select> </div>
-                                    <div class='col-sm-4'> <select class='browser-default custom-select mb-4' id='select' style='color:#10505b'>
-                                            <option value='' disabled='' selected=''>Lớn(15-60)</option>
-                                            <option value='1'>0</option>
-                                            <option value='2'>1</option>
-                                            <option value='3'>2</option>
-                                            <option value='3'>3</option>
-                                        </select> </div>
-                                    <div class='col-sm-4'> <select class='browser-default custom-select mb-4' id='select' style='color:#10505b'>
-                                            <option value='' disabled='' selected=''>Già(>60)</option>
-                                            <option value='1'>0</option>
-                                            <option value='2'>1</option>
-                                            <option value='3'>2</option>
-                                            <option value='3'>3</option>
-                                        </select> </div>
-                                </div> <button   class='btn btn-primary float-bottom mt-5' onclick='myFunction1()' value='submit' style='margin-bottom: 5px;margin-top: -10px;'>Tìm kiếm</button>
-                            
-                            </div>
-                  
-               
-
-                    </form>
-   
-                
-                   
-  
-                
-            </nav>
-
-            <nav1>
-                <form action='#' >
-                    <div class='thanhtoan' id='thanhtoan'>
-                        <div class='container d-flex justify-content-center mt-5'>
-                            <div class='card'>
-                                <div>
-                                    <div class='d-flex pt-3 pl-3'>
-                                        <div type='margin-left:10px'><img src='anh/qr.png' width='100' height='100' style=' border-radius: 4px'/></div>
-                                        <div class='mt-3 pl-2'><span class='name' >Tài khoản</span>
-                                            <div><span class='cross'><div class='namett' ></div></span></div>
-												<input type='hidden' name='tttenks' id='tttenks'></input>                                        </div>
-                                    </div>
-                                    <div class='py-2 px-3'>
-                                        <div class='first pl-2 d-flex py-2'>
-                                            <div class='form-check'> <input type='radio' name='optradio' class='form-check-input mt-3 dot' checked> </div>
-                                            <div class='border-left pl-2'><span class='head'>Tổng tiền trả</span>
-                                                <div><span class='amount'> <div class='resulttt' ></div></span></div>
-												<input type='hidden' name='giaks' id='giaks'></input>                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='py-2 px-3'>
-                                        <div class='second pl-2 d-flex py-2'>
-                                            <div class='form-check'> <input type='checkbox' name='optradio' class='form-check-input mt-3 dot'> </div>
-                                            <div class='border-left pl-2'><span class='head'>số cmnd</span>
-                                                <div class='d-flex'><span class='tien'>CMND</span><input name='cmnd' type='text'  class='form-control ml-1' placeholder='0'></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='d-flex justify-content-between px-3 pt-4 pb-3'>
-                                        <div><span class='back' style='cursor: pointer;' id='thoattt'>Thoát</span></div> <button  class='btn btn-primary button'>Thanh toán</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </form>
-
-
-            </nav1>
-        </header>
-
-    
-            <main>
-                <section>
-                    <div class='home'>   
-                        
-                        <div class='parallax home__parallax home__parallax-img2 may1' data-rellax-speed='-3' ></div>
-                        <div class='parallax home__parallax home__parallax-img3 may2 ' data-rellax-speed='0.15'></div>
-                       
-                         <div class='tencty'>
-
-<h1 class='parallax home__title headerx' data-rellax-speed='-2.2'  ><a style='background-color: rgba(195, 209, 71, 0.219);border-radius: 12px;'>Goool</a>loser </h1>
-                      <span class="parallax home__subtitle" data-rellax-speed="-2.1">Khám phá với những</br> điều mới mẻ </span>                                        
-                         </div >
-                </div>
-                </section>           <section class='container ' id='Booking' >
-                    <div style='padding-left: 30px;padding-top: 70px;'>
-                    <h3><a style='background-color: #29068b;padding: 5px;border-radius: 10px;cursor:pointer;color: #ffffff;'  onclick='myFunction2()'>Tìm kiếm</a> chuyến bay mà bạn muốn  
-                    </h3>
-                    <p>TÌM KIẾM NHỮNG CHUYẾN BAY VỚI NHỮNG MỨC GIÁ HẤP DẪN</p>
-                
-
-                </div>
-
-                </section>                                          <section class='container contact section header2' >
-                                        <div class='container bannery  banner1 ' id='banner_id1' >
-  
-                                            
-                                            <div class='quan'>
-                                            
-<br>        <div value='1.299.000 vnd' id='29' class='grid wide container thequan' style='cursor: pointer;'>
-                                                    <div value='1.299.000 vnd' class='prolayer-fly' >
-                                                   <div value='1.299.000 vnd' class='prolayer3'>              
-                                                   <img src='anh/bambo.png' width='40' height='10' alt=''>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='block-content'>
-                                                   <div value='1.299.000 vnd' class='prolay-full' style='display: flex;'>
-                                                   <div value='1.299.000 vnd' class='prolayze'  title='8:40 AM on SAT, MAY 29 '>
-                                                      <b>7:00 AM</b><br>
-                                                      <p>BBairline</p>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-fly'>
-                                                      <h6 style='color: #79b18a;'>1h30'</h6>
-                                                      <p>SGN-DAD</p>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-skyline'>
-                                                      <h6 style='color: #79b18a;'>Nonstop</h6>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-money'>
-                                                      <h6 style='color: #79b18a;'>1.299.000 vnd</h6>
-                                                      <p>round trip</p>
-                                                   </div>
-                                                   </div>
-                                                    <div  value='1.299.000 vnd' class='content-sp' style='display: none;'>
-                                                <div value='1.299.000 vnd' class='content'>
-                                                          <p>SGN-DAD</p>
-                                                          <p>round trip</p>
-                                                </div>
-                                                <div class='content'>
-                                                    <h6 style='color: #79b18a;'>&nbsp;&nbsp;&nbsp;Nonstop</h6>
-                                                      <h6 style='color: #79b18a;'>1h30'</h6>
-                                                      <p></p>
-                                                </div>
-                                              </div>
-                                                   </div>
-                                                   </div>
-                                                   </div><br>        <div value='1.299.000 vnd' id='31' class='grid wide container thequan' style='cursor: pointer;'>
-                                                    <div value='1.299.000 vnd' class='prolayer-fly' >
-                                                   <div value='1.299.000 vnd' class='prolayer3'>              
-                                                   <img src='anh/vecaair.png' width='40' height='10' alt=''>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='block-content'>
-                                                   <div value='1.299.000 vnd' class='prolay-full' style='display: flex;'>
-                                                   <div value='1.299.000 vnd' class='prolayze'  title='8:40 AM on SAT, MAY 29 '>
-                                                      <b>7:00 AM</b><br>
-                                                      <p>VECA</p>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-fly'>
-                                                      <h6 style='color: #79b18a;'>1h30'</h6>
-                                                      <p>SGN-DAD</p>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-skyline'>
-                                                      <h6 style='color: #79b18a;'>Nonstop</h6>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-money'>
-                                                      <h6 style='color: #79b18a;'>1.299.000 vnd</h6>
-                                                      <p>round trip</p>
-                                                   </div>
-                                                   </div>
-                                                    <div  value='1.299.000 vnd' class='content-sp' style='display: none;'>
-                                                <div value='1.299.000 vnd' class='content'>
-                                                          <p>SGN-DAD</p>
-                                                          <p>round trip</p>
-                                                </div>
-                                                <div class='content'>
-                                                    <h6 style='color: #79b18a;'>&nbsp;&nbsp;&nbsp;Nonstop</h6>
-                                                      <h6 style='color: #79b18a;'>1h30'</h6>
-                                                      <p></p>
-                                                </div>
-                                              </div>
-                                                   </div>
-                                                   </div>
-                                                   </div><br>        <div value='1.299.000 vnd' id='32' class='grid wide container thequan' style='cursor: pointer;'>
-                                                    <div value='1.299.000 vnd' class='prolayer-fly' >
-                                                   <div value='1.299.000 vnd' class='prolayer3'>              
-                                                   <img src='anh/vecaair.png' width='40' height='10' alt=''>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='block-content'>
-                                                   <div value='1.299.000 vnd' class='prolay-full' style='display: flex;'>
-                                                   <div value='1.299.000 vnd' class='prolayze'  title='8:40 AM on SAT, MAY 29 '>
-                                                      <b>7:00 AM</b><br>
-                                                      <p>VECA</p>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-fly'>
-                                                      <h6 style='color: #79b18a;'>1h30'</h6>
-                                                      <p>SGN-DAD</p>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-skyline'>
-                                                      <h6 style='color: #79b18a;'>Nonstop</h6>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-money'>
-                                                      <h6 style='color: #79b18a;'>1.299.000 vnd</h6>
-                                                      <p>round trip</p>
-                                                   </div>
-                                                   </div>
-                                                    <div  value='1.299.000 vnd' class='content-sp' style='display: none;'>
-                                                <div value='1.299.000 vnd' class='content'>
-                                                          <p>SGN-DAD</p>
-                                                          <p>round trip</p>
-                                                </div>
-                                                <div class='content'>
-                                                    <h6 style='color: #79b18a;'>&nbsp;&nbsp;&nbsp;Nonstop</h6>
-                                                      <h6 style='color: #79b18a;'>1h30'</h6>
-                                                      <p></p>
-                                                </div>
-                                              </div>
-                                                   </div>
-                                                   </div>
-                                                   </div><br>        <div value='1.299.000 vnd' id='34' class='grid wide container thequan' style='cursor: pointer;'>
-                                                    <div value='1.299.000 vnd' class='prolayer-fly' >
-                                                   <div value='1.299.000 vnd' class='prolayer3'>              
-                                                   <img src='anh/vecaair.png' width='40' height='10' alt=''>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='block-content'>
-                                                   <div value='1.299.000 vnd' class='prolay-full' style='display: flex;'>
-                                                   <div value='1.299.000 vnd' class='prolayze'  title='8:40 AM on SAT, MAY 29 '>
-                                                      <b>7:00 AM</b><br>
-                                                      <p>VECA</p>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-fly'>
-                                                      <h6 style='color: #79b18a;'>1h30'</h6>
-                                                      <p>SGN-DAD</p>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-skyline'>
-                                                      <h6 style='color: #79b18a;'>Nonstop</h6>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-money'>
-                                                      <h6 style='color: #79b18a;'>1.299.000 vnd</h6>
-                                                      <p>round trip</p>
-                                                   </div>
-                                                   </div>
-                                                    <div  value='1.299.000 vnd' class='content-sp' style='display: none;'>
-                                                <div value='1.299.000 vnd' class='content'>
-                                                          <p>SGN-DAD</p>
-                                                          <p>round trip</p>
-                                                </div>
-                                                <div class='content'>
-                                                    <h6 style='color: #79b18a;'>&nbsp;&nbsp;&nbsp;Nonstop</h6>
-                                                      <h6 style='color: #79b18a;'>1h30'</h6>
-                                                      <p></p>
-                                                </div>
-                                              </div>
-                                                   </div>
-                                                   </div>
-                                                   </div><br>        <div value='1.299.000 vnd' id='30' class='grid wide container thequan' style='cursor: pointer;'>
-                                                    <div value='1.299.000 vnd' class='prolayer-fly' >
-                                                   <div value='1.299.000 vnd' class='prolayer3'>              
-                                                   <img src='anh/vietject.jpg' width='40' height='10' alt=''>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='block-content'>
-                                                   <div value='1.299.000 vnd' class='prolay-full' style='display: flex;'>
-                                                   <div value='1.299.000 vnd' class='prolayze'  title='8:40 AM on SAT, MAY 29 '>
-                                                      <b>7:00 AM</b><br>
-                                                      <p>Vietjetair</p>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-fly'>
-                                                      <h6 style='color: #79b18a;'>1h30'</h6>
-                                                      <p>SGN-DAD</p>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-skyline'>
-                                                      <h6 style='color: #79b18a;'>Nonstop</h6>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-money'>
-                                                      <h6 style='color: #79b18a;'>1.299.000 vnd</h6>
-                                                      <p>round trip</p>
-                                                   </div>
-                                                   </div>
-                                                    <div  value='1.299.000 vnd' class='content-sp' style='display: none;'>
-                                                <div value='1.299.000 vnd' class='content'>
-                                                          <p>SGN-DAD</p>
-                                                          <p>round trip</p>
-                                                </div>
-                                                <div class='content'>
-                                                    <h6 style='color: #79b18a;'>&nbsp;&nbsp;&nbsp;Nonstop</h6>
-                                                      <h6 style='color: #79b18a;'>1h30'</h6>
-                                                      <p></p>
-                                                </div>
-                                              </div>
-                                                   </div>
-                                                   </div>
-                                                   </div><br>        <div value='1.299.000 vnd' id='33' class='grid wide container thequan' style='cursor: pointer;'>
-                                                    <div value='1.299.000 vnd' class='prolayer-fly' >
-                                                   <div value='1.299.000 vnd' class='prolayer3'>              
-                                                   <img src='anh/vietject.jpg' width='40' height='10' alt=''>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='block-content'>
-                                                   <div value='1.299.000 vnd' class='prolay-full' style='display: flex;'>
-                                                   <div value='1.299.000 vnd' class='prolayze'  title='8:40 AM on SAT, MAY 29 '>
-                                                      <b>7:00 AM</b><br>
-                                                      <p>Vietjetair</p>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-fly'>
-                                                      <h6 style='color: #79b18a;'>1h30'</h6>
-                                                      <p>SGN-DAD</p>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-skyline'>
-                                                      <h6 style='color: #79b18a;'>Nonstop</h6>
-                                                   </div>
-                                                   <div value='1.299.000 vnd' class='list-money'>
-                                                      <h6 style='color: #79b18a;'>1.299.000 vnd</h6>
-                                                      <p>round trip</p>
-                                                   </div>
-                                                   </div>
-                                                    <div  value='1.299.000 vnd' class='content-sp' style='display: none;'>
-                                                <div value='1.299.000 vnd' class='content'>
-                                                          <p>SGN-DAD</p>
-                                                          <p>round trip</p>
-                                                </div>
-                                                <div class='content'>
-                                                    <h6 style='color: #79b18a;'>&nbsp;&nbsp;&nbsp;Nonstop</h6>
-                                                      <h6 style='color: #79b18a;'>1h30'</h6>
-                                                      <p></p>
-                                                </div>
-                                              </div>
-                                                   </div>
-                                                   </div>
-                                                   </div>                                                
-                                                </div>
-                                                
-                    
-
-
-              
-
-                                        </section>
-
-        
-       
-     
-          <section class='container 'id ='yasuo' >
-                <div style='padding-left: 30px;padding-top: 50px;'>
-                <h3>Tìm hiểu thêm những gì là tốt nhất</h3>
-                <p>CHÚNG TÔI ĐỒNG HÀNH CÙNG BẠN <a style='background-color: #29068b;padding: 5px;border-radius: 8px;cursor:pointer;color: #ffffff;text-decoration: none' href='homestay/summer.html#vungbien' >TÌM HIÊU THÊM </a><p>
-            </div>
-            </section>
-      <section class='container   banner3 '  >
-                <div id='myCarousel' class='carousel slide carousel-fade' data-ride='carousel'>
-                    <div class='carousel-inner'>
-                        <div class='carousel-item active'>
-                            <div class='mask flex-center'  style='background-image:url(css/anime7.jpg);border-radius: 12px;'>
-                                <div class='container'>
-                                    <div class='row align-items-center'>
-                                        <div class='col-md-7 col-12 order-md-1 order-2'>
-             
-                                            <h4>Vùng biển</h4>
-                                            <p>Biển là sự lựa chọn hàng đầu nếu bạn thích hải sản và tắm nắng</p> <br> <a href='homestay/summer.html#vungbien' >TÌM HIỂU THÊM</a>
-                                        </div>
-                                        <div class='col-md-5 col-12 order-md-2 order-1'></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                  <div value='1' class='carousel-item '
->                            <div class='mask flex-center'style='background-image:url(css/anime12.jpg);border-radius: 12px;'>
-                                <div class='container'>
-                                    <div class='row align-items-center'>
-                                        <div class='col-md-7 col-12 order-md-1 order-2'>
-                                            <h4>Vùng núi</h4>
-                                            <p>Thử sức leo lên những ngọn núi cao và đẹp</p> <br> <a href='homestay/summer.html#vungnui'>Tìm hiểu thêm</a>
-                                        </div>
-                                        <div class='col-md-5 col-12 order-md-2 order-1'></br></br></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                  <div value='2' class='carousel-item '
->                            <div class='mask flex-center'style='background-image:url(css/songdongpro.gif);border-radius: 12px;'>
-                                <div class='container'>
-                                    <div class='row align-items-center'>
-                                        <div class='col-md-7 col-12 order-md-1 order-2'>
-                                            <h4>Sống động</h4>
-                                            <p>Đêm xuống, khu phố nhộn nhịp, tấp nập nhất với ánh đèn rực rỡ</p> <br> <a href='homestay/summer.html#songdong'>Tìm hiểu thêm</a>
-                                        </div>
-                                        <div class='col-md-5 col-12 order-md-2 order-1'></br></br></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                  <div value='3' class='carousel-item '
->                            <div class='mask flex-center'style='background-image:url(css/anime25.jpg);border-radius: 12px;'>
-                                <div class='container'>
-                                    <div class='row align-items-center'>
-                                        <div class='col-md-7 col-12 order-md-1 order-2'>
-                                            <h4>Yên tĩnh</h4>
-                                            <p>Rời chốn thành thị ồn ào và tận hưởng những phút giây yên bình</p> <br> <a href='homestay/summer.html#yentinh'>Tìm hiểu thêm</a>
-                                        </div>
-                                        <div class='col-md-5 col-12 order-md-2 order-1'></br></br></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                    </div> <a class='carousel-control-prev' href='#myCarousel' role='button' data-slide='prev'> <span class='carousel-control-prev-icon' aria-hidden='true'></span> <span class='sr-only'></span> </a> <a class='carousel-control-next' href='#myCarousel' role='button' data-slide='next'> <span class='carousel-control-next-icon' aria-hidden='true'></span> <span class='sr-only'></span> </a>
-                </div>
-            </section>            
-           
-         
-        
-          <section class='container '  id ='bannerkhachsan' >
-                <div style='padding-left: 30px;padding-top: 50px;'>
-                <h3>Hãy nói cho chúng tôi</h3>
-                <p>NƠI BẠN SẮP ĐẾN VÀ CHÚNG TÔI SẼ GIÚP BẠN TÌM NƠI NGHỈ NGƠI<p>
-            </div>
-            </section>            <section class='container  bannerx' >
-                <div class='container px-4  '>
-                    <div class='row gx-2 '>
- <div value='haian' class='col hihi '>
-                       <div class='p-1  dulich  '>
-
-                        <div class='row  ' >
-                            <div class='col-sm anhdulich '>
-                                <div class='container d-flex justify-content-center'>
-                                    <div class='card p-2 my-4'> <img src='anh/haian1.jpg' height='560' id='haian1'>
-                                        <div class='text-white'>
-                                            <h4 style='color:aliceblue'>HAIAN Beach Hotel & Spa</h4>
-                                        </div>
-                                        <div class='text-muted'>
-                                            <p style='color:aliceblue'>278 Vo Nguyen Giap Street Ngu Hanh Son District, Da Nang 550000 Vietnam</p>
-                                        </div>
-                                        <div class='d-flex flex-row justify-content-between align-items-center'>
-                                             <span  id='haian11'>
-                                                <hr class='first'></span>
-                                                <span id='haian12'>
-                                                <hr ></span>
-                                                <span id='haian13'>
-                                                <hr ></span>
-                                             </div> <button type='button' class='btn btn-primary mt-3 mb-1' id='shaian1' value='120000haian' ><span>120000 vnd </span></button>
-                                    </div>
-                                </div>
-                           
-                              </div>
-                              
-
-                         
-                     
-            
-                    </div>
-
-
-                       </div>
-                      </div> <div value='rosamia' class='col hihi '>
-                       <div class='p-1  dulich  '>
-
-                        <div class='row  ' >
-                            <div class='col-sm anhdulich '>
-                                <div class='container d-flex justify-content-center'>
-                                    <div class='card p-2 my-4'> <img src='anh/rosamia1.jpg' height='560' id='rosamia1'>
-                                        <div class='text-white'>
-                                            <h4 style='color:aliceblue'>Rosamia Da Nang Hotel</h4>
-                                        </div>
-                                        <div class='text-muted'>
-                                            <p style='color:aliceblue'>282 Vo Nguyen Giap, Đà Nẵng, Việt Nam</p>
-                                        </div>
-                                        <div class='d-flex flex-row justify-content-between align-items-center'>
-                                             <span  id='rosamia11'>
-                                                <hr class='first'></span>
-                                                <span id='rosamia12'>
-                                                <hr ></span>
-                                                <span id='rosamia13'>
-                                                <hr ></span>
-                                             </div> <button type='button' class='btn btn-primary mt-3 mb-1' id='srosamia1' value='130000rosamia' ><span>130000 vnd </span></button>
-                                    </div>
-                                </div>
-                           
-                              </div>
-                              
-
-                         
-                     
-            
-                    </div>
-
-
-                       </div>
-                      </div> <div value='vinpearl' class='col hihi '>
-                       <div class='p-1  dulich  '>
-
-                        <div class='row  ' >
-                            <div class='col-sm anhdulich '>
-                                <div class='container d-flex justify-content-center'>
-                                    <div class='card p-2 my-4'> <img src='anh/vinpearl1.jpg' height='560' id='vinpearl1'>
-                                        <div class='text-white'>
-                                            <h4 style='color:aliceblue'>Vinpearl Condotel Riverfront Da Nang </h4>
-                                        </div>
-                                        <div class='text-muted'>
-                                            <p style='color:aliceblue'>Ngo Quyen, Đà Nẵng, Việt Nam</p>
-                                        </div>
-                                        <div class='d-flex flex-row justify-content-between align-items-center'>
-                                             <span  id='vinpearl11'>
-                                                <hr class='first'></span>
-                                                <span id='vinpearl12'>
-                                                <hr ></span>
-                                                <span id='vinpearl13'>
-                                                <hr ></span>
-                                             </div> <button type='button' class='btn btn-primary mt-3 mb-1' id='svinpearl1' value='320000vinpearl' ><span>320000 vnd </span></button>
-                                    </div>
-                                </div>
-                           
-                              </div>
-                              
-
-                         
-                     
-            
-                    </div>
-
-
-                       </div>
-                      </div> <div value='dlg' class='col hihi '>
-                       <div class='p-1  dulich  '>
-
-                        <div class='row  ' >
-                            <div class='col-sm anhdulich '>
-                                <div class='container d-flex justify-content-center'>
-                                    <div class='card p-2 my-4'> <img src='anh/dlg1.jpg' height='560' id='dlg1'>
-                                        <div class='text-white'>
-                                            <h4 style='color:aliceblue'>DLG Hotel Danang </h4>
-                                        </div>
-                                        <div class='text-muted'>
-                                            <p style='color:aliceblue'>258 Vo Nguyen Giap, Son Tra District, Đà Nẵng, Việt Nam</p>
-                                        </div>
-                                        <div class='d-flex flex-row justify-content-between align-items-center'>
-                                             <span  id='dlg11'>
-                                                <hr class='first'></span>
-                                                <span id='dlg12'>
-                                                <hr ></span>
-                                                <span id='dlg13'>
-                                                <hr ></span>
-                                             </div> <button type='button' class='btn btn-primary mt-3 mb-1' id='sdlg1' value='135000dlg' ><span>135000 vnd </span></button>
-                                    </div>
-                                </div>
-                           
-                              </div>
-                              
-
-                         
-                     
-            
-                    </div>
-
-
-                       </div>
-                      </div> <div value='golden' class='col hihi '>
-                       <div class='p-1  dulich  '>
-
-                        <div class='row  ' >
-                            <div class='col-sm anhdulich '>
-                                <div class='container d-flex justify-content-center'>
-                                    <div class='card p-2 my-4'> <img src='anh/golden1.jpg' height='560' id='golden1'>
-                                        <div class='text-white'>
-                                            <h4 style='color:aliceblue'>Danang Golden Bay </h4>
-                                        </div>
-                                        <div class='text-muted'>
-                                            <p style='color:aliceblue'> 1 Le Van Duyet, Son Tra, Đà Nẵng, Việt Nam</p>
-                                        </div>
-                                        <div class='d-flex flex-row justify-content-between align-items-center'>
-                                             <span  id='golden11'>
-                                                <hr class='first'></span>
-                                                <span id='golden12'>
-                                                <hr ></span>
-                                                <span id='golden13'>
-                                                <hr ></span>
-                                             </div> <button type='button' class='btn btn-primary mt-3 mb-1' id='sgolden1' value='135000golden' ><span>135000 vnd </span></button>
-                                    </div>
-                                </div>
-                           
-                              </div>
-                              
-
-                         
-                     
-            
-                    </div>
-
-
-                       </div>
-                      </div> <div value='hilton' class='col hihi '>
-                       <div class='p-1  dulich  '>
-
-                        <div class='row  ' >
-                            <div class='col-sm anhdulich '>
-                                <div class='container d-flex justify-content-center'>
-                                    <div class='card p-2 my-4'> <img src='anh/hilton1.jpg' height='560' id='hilton1'>
-                                        <div class='text-white'>
-                                            <h4 style='color:aliceblue'>Hilton Da Nang </h4>
-                                        </div>
-                                        <div class='text-muted'>
-                                            <p style='color:aliceblue'>50 Bach Dang St, Hai Chau District, Đà Nẵng, Việt Nam</p>
-                                        </div>
-                                        <div class='d-flex flex-row justify-content-between align-items-center'>
-                                             <span  id='hilton11'>
-                                                <hr class='first'></span>
-                                                <span id='hilton12'>
-                                                <hr ></span>
-                                                <span id='hilton13'>
-                                                <hr ></span>
-                                             </div> <button type='button' class='btn btn-primary mt-3 mb-1' id='shilton1' value='195000hilton' ><span>195000 vnd </span></button>
-                                    </div>
-                                </div>
-                           
-                              </div>
-                              
-
-                         
-                     
-            
-                    </div>
-
-
-                       </div>
-                      </div>                    </div>
-                    
-                  </div>
-                
-            </section>
-
-            <section class='yasuo1'  >
-
-                <div class='chungtoi' id='about'>
-                    <h2 class='about__subtitle'>We're Team Good Loser</h2>
-                    <span class='about__profession'>Best Web Design-2021</span>
-    
-                    <p class='about__text'>Sản phẩm được tạo ra bởi team Gloser Đại Học CNTT & TT Việt Hàn </p>
-                    <p class='about__text'> Tất cả hình ảnh trong bài làm đều được lấy ở pexel.com là một trang web hoàn toàn miễn phí sử dụng ảnh ảnh </p>
-                    <p class='about__text'>Các công nghệ sử dụng trong trang web bao gồm #rellax.js #bootstrap5 #scrollreveal.js #jQuery.js  trang web được thực hiện để người dùng dễ dàng đưa nội dung lên web</p>
-       
-                    <p class='about__text'>Hãy thử ấn    nút    tìm    kiếm    chuyến    bay    nếu    bạn    chưa    ấn   -   -   cảm    ơn    đã    xem    bài    mọi    thắc    mắt    xin    gửi    về    nvdu.20it6@vku.udn.vn'</p>
-
-
-                    <div class='about__social'>
-                        <a href='https://github.com/vietdu/nbanbi' class='about__social-icon' target='_blank'><i class='bx bxl-linkedin' ></i></a>
-                        <a href='https://github.com/vietdu/nbanbi' class='about__social-icon' target='_blank'><i class='bx bxl-facebook-circle'></i></a>
-                        <a href='https://github.com/vietdu/nbanbi' class='about__social-icon' target='_blank'><i class='bx bxl-github'></i></a>
-                    </div>
-                </div>
-
-            </section>
-
-    
-           
-    
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js'></script>
-    
-           
-    
-            <script src='https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js'></script>
-
-            <script >
-                
-const navMenu = document.getElementById('nav-menu'),
-
-toggleMenu = document.getElementById('nav-toggle'),
-
-dangnhapMenu = document.getElementById('dangnhap-menu'),
-dangnkyMenu = document.getElementById('dangky-menu'),
-hienthibay=document.getElementById('tkbay'),
-hienthithanhtoan=document.getElementById('thanhtoan'),
-
-closedangnhap=document.getElementById('dangnhap'),
-closedangnhap1=document.getElementById('dangnhap1'),
-closetkbay1=document.getElementById('outtkbay1'),
-closedangnhap2=document.getElementById('dangnhap2'),
-closedangnhap3=document.getElementById('dangnhap3')
-,
-    clickhaian1=document.getElementById('shaian1'),
-    clickrosamia1=document.getElementById('srosamia1'),
-    clickvinpearl1=document.getElementById('svinpearl1'),
-    clickdlg1=document.getElementById('sdlg1'),
-    clickgolden1=document.getElementById('sgolden1'),
-    clickhilton1=document.getElementById('shilton1') 
-   clickhaian1.addEventListener('click', (event)=>{
-  const result = document.querySelector('.resulttt');
-  const resultx = document.querySelector('.namett');
-var text = `${event.target.value}`;
-var number = text.match(/\d/g);
-number = number.join("");
-  result.textContent = number+' vnd';
-var tenks = text.replace(/\d+/g,'');  resultx.textContent = tenks;
-document.getElementById('tttenks').value=tenks;document.getElementById('giaks').value=number;      hienthithanhtoan.classList.add('thanhtoanshow')
-   }) 
-   clickrosamia1.addEventListener('click', (event)=>{
-  const result = document.querySelector('.resulttt');
-  const resultx = document.querySelector('.namett');
-var text = `${event.target.value}`;
-var number = text.match(/\d/g);
-number = number.join("");
-  result.textContent = number+' vnd';
-var tenks = text.replace(/\d+/g,'');  resultx.textContent = tenks;
-document.getElementById('tttenks').value=tenks;document.getElementById('giaks').value=number;      hienthithanhtoan.classList.add('thanhtoanshow')
-   }) 
-   clickvinpearl1.addEventListener('click', (event)=>{
-  const result = document.querySelector('.resulttt');
-  const resultx = document.querySelector('.namett');
-var text = `${event.target.value}`;
-var number = text.match(/\d/g);
-number = number.join("");
-  result.textContent = number+' vnd';
-var tenks = text.replace(/\d+/g,'');  resultx.textContent = tenks;
-document.getElementById('tttenks').value=tenks;document.getElementById('giaks').value=number;      hienthithanhtoan.classList.add('thanhtoanshow')
-   }) 
-   clickdlg1.addEventListener('click', (event)=>{
-  const result = document.querySelector('.resulttt');
-  const resultx = document.querySelector('.namett');
-var text = `${event.target.value}`;
-var number = text.match(/\d/g);
-number = number.join("");
-  result.textContent = number+' vnd';
-var tenks = text.replace(/\d+/g,'');  resultx.textContent = tenks;
-document.getElementById('tttenks').value=tenks;document.getElementById('giaks').value=number;      hienthithanhtoan.classList.add('thanhtoanshow')
-   }) 
-   clickgolden1.addEventListener('click', (event)=>{
-  const result = document.querySelector('.resulttt');
-  const resultx = document.querySelector('.namett');
-var text = `${event.target.value}`;
-var number = text.match(/\d/g);
-number = number.join("");
-  result.textContent = number+' vnd';
-var tenks = text.replace(/\d+/g,'');  resultx.textContent = tenks;
-document.getElementById('tttenks').value=tenks;document.getElementById('giaks').value=number;      hienthithanhtoan.classList.add('thanhtoanshow')
-   }) 
-   clickhilton1.addEventListener('click', (event)=>{
-  const result = document.querySelector('.resulttt');
-  const resultx = document.querySelector('.namett');
-var text = `${event.target.value}`;
-var number = text.match(/\d/g);
-number = number.join("");
-  result.textContent = number+' vnd';
-var tenks = text.replace(/\d+/g,'');  resultx.textContent = tenks;
-document.getElementById('tttenks').value=tenks;document.getElementById('giaks').value=number;      hienthithanhtoan.classList.add('thanhtoanshow')
-   })
- click29=document.getElementById('29'),
- click31=document.getElementById('31'),
- click32=document.getElementById('32'),
- click34=document.getElementById('34'),
- click30=document.getElementById('30'),
- click33=document.getElementById('33'),   
- click29.addEventListener('click', (event)=>{
-  const result2 = document.querySelector('.resulttt');
-  result2.textContent = `${event.target.value}`;
-      hienthithanhtoan.classList.add('thanhtoanshow')
-   })   
- click31.addEventListener('click', (event)=>{
-  const result2 = document.querySelector('.resulttt');
-  result2.textContent = `${event.target.value}`;
-      hienthithanhtoan.classList.add('thanhtoanshow')
-   })   
- click32.addEventListener('click', (event)=>{
-  const result2 = document.querySelector('.resulttt');
-  result2.textContent = `${event.target.value}`;
-      hienthithanhtoan.classList.add('thanhtoanshow')
-   })   
- click34.addEventListener('click', (event)=>{
-  const result2 = document.querySelector('.resulttt');
-  result2.textContent = `${event.target.value}`;
-      hienthithanhtoan.classList.add('thanhtoanshow')
-   })   
- click30.addEventListener('click', (event)=>{
-  const result2 = document.querySelector('.resulttt');
-  result2.textContent = `${event.target.value}`;
-      hienthithanhtoan.classList.add('thanhtoanshow')
-   })   
- click33.addEventListener('click', (event)=>{
-  const result2 = document.querySelector('.resulttt');
-  result2.textContent = `${event.target.value}`;
-      hienthithanhtoan.classList.add('thanhtoanshow')
-   })
-
-
-thoattt=document.getElementById('thoattt')
-
-
-thoattt.addEventListener('click', ()=>{
-  hienthithanhtoan.classList.remove('thanhtoanshow')
-})
-
-
-
-
-
-toggleMenu.addEventListener('click', ()=>{
-navMenu.classList.toggle('show')
-})
-closedangnhap.addEventListener('click', ()=>{
-dangnhapMenu.classList.add('showdangnhap')
-
-})
-closedangnhap1.addEventListener('click', ()=>{
-
-dangnhapMenu.classList.remove('showdangnhap')
-})
-closedangnhap2.addEventListener('click', ()=>{
-dangnhapMenu.classList.toggle('andangnhap'),
-dangnkyMenu.classList.remove('dangky')
-})
-closedangnhap3.addEventListener('click', ()=>{
-dangnhapMenu.classList.toggle('andangnhap'),
-dangnkyMenu.classList.add('dangky'),
-dangnhapMenu.classList.remove('andangnhap')
-})
-
-
-
-closetkbay1.addEventListener('click', ()=>{
-
-
-hienthibay.classList.remove('dangky'),
-hienthibay.classList.remove('andangnhap'),
-dangnhapMenu.classList.add('showdangnhap')
-
-
-})
-
-
-
-
-
-
-var rellax = new Rellax('.parallax');
-const srr = ScrollReveal({
-origin: 'top',
-distance: '80px',
-duration: 2000,
-reset: true
-})
-
-
-document.addEventListener('mousemove', move);
-function move(e){
-this.querySelectorAll('.vietdu').forEach(layer =>{
-
-    const speed =layer.getAttribute('data-speed')
-
-    const x = (-window.innerWidth  -e.pageX*speed)/240
-    const y = (-window.innerWidth  -e.pageY*speed)/120
-
-    layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-})
-
-}
-const srr1 = ScrollReveal({
-origin: 'left',
-distance: '80px',
-duration: 2000,
-reset: this,
-})
-
-srr1.reveal('.form_bn2', {delay: 450})
-
-const srr2 = ScrollReveal({
-origin: 'right',
-distance: '80px',
-duration: 2000,
-reset: this,
-})
-
-
-srr2.reveal('.form_bn3', {delay: 450})
-
-
-srr.reveal('.about__img', {delay: 500})
-srr.reveal('.about__subtitle', {delay: 350})
-srr.reveal('.about__profession', {delay: 400})
-srr.reveal('.about__text', {delay: 500})
-srr.reveal('.about__social-icon', {delay: 600, interval: 200})
-
-
-window.onscroll = function() {myFunction()};
-
-var header2 = document.getElementById("myheader2");
-var sticky = header2.offsetTop;
-var w = window.innerWidth;
-
-var banner2 = document.getElementById("banner_id2");
-var banner_zom2 = banner2.offsetTop;
-var banner3 = document.getElementById("banner_id3");
-var banner_zom3 = banner3.offsetTop;
-
-
-
-
-
-
-
-
-
-
-
-
-
-srr.reveal('.contact__subtitle', {})
-srr.reveal('.contact__text', {interval: 200})
-srr.reveal('.contact__input', {delay: 400})
-srr.reveal('.contact__button', {delay: 600})
-
-
-
-
-
-gsap.from('.nav__logo', {opacity:0, duration: 3, delay: .7, y: 30, ease:'expo.out'});
-gsap.from('.nav__toggle', {opacity:0, duration: 3, delay: .7, y: 30, ease:'expo.out'});
-gsap.from('.nav__item', {opacity: 0, duration: 3, delay: .7, y: 35, ease:'expo.out', stagger: .2})
-
-
-
-gsap.from('.home__subtitle', {opacity:0, duration: 3, delay: 1.1 , y: 35, ease:'expo.out'});
-
-
-gsap.from('.home__scroll', {opacity:0, duration: 3, delay: 1.5, y: 25, ease:'expo.out'});
-
-
-const sr = ScrollReveal({
-duration: 2500,
-reset: true
-});
-
-sr.reveal('.section__data',{origin: 'left',distance: '70px'}); 
-
-sr.reveal('.section__img',{origin: 'left',distance: '90px',delay: 200}); 
-
-function myFunction2() {
-
-
-navMenu.classList.add('show')
-
-}
-function myFunction3() {
-
-location.href = "#Booking";
-}
-function myFunction4() {
-
-location.href = "#bannerkhachsan";
-}
-$(document).ready(function() {
-
-
-
-if ($('.bbb_deals_slider').length) {
-var bbb_dealsSlider = $('.bbb_deals_slider');
-bbb_dealsSlider.owlCarousel({
-items: 1,
-loop: false,
-navClass: ['bbb_deals_slider_prev', 'bbb_deals_slider_next'],
-nav: false,
-dots: false,
-smartSpeed: 1200,
-margin: 30,
-autoplay: false,
-autoplayTimeout: 5000
-});
-
-if ($('.bbb_deals_slider_prev').length) {
-var prev = $('.bbb_deals_slider_prev');
-prev.on('click', function() {
-bbb_dealsSlider.trigger('prev.owl.carousel');
-});
-}
-
-if ($('.bbb_deals_slider_next').length) {
-var next = $('.bbb_deals_slider_next');
-next.on('click', function() {
-bbb_dealsSlider.trigger('next.owl.carousel');
-});
-}
-}
-
-
-
-
-if ($('.bbb_deals_timer_box').length) {
-var timers = $('.bbb_deals_timer_box');
-timers.each(function() {
-var timer = $(this);
-
-var targetTime;
-var target_date;
-
-if (timer.data('target-time') !== "") {
-targetTime = timer.data('target-time');
-target_date = new Date(targetTime).getTime();
-} else {
-var date = new Date();
-date.setDate(date.getDate() + 2);
-target_date = date.getTime();
-}
-
-var days, hours, minutes, seconds;
-
-var h = timer.find('.bbb_deals_timer_hr');
-var m = timer.find('.bbb_deals_timer_min');
-var s = timer.find('.bbb_deals_timer_sec');
-
-setInterval(function() {
-
-var current_date = new Date().getTime();
-var seconds_left = (target_date - current_date) / 1000;
-console.log(seconds_left);
-
-days = parseInt(seconds_left / 86400);
-seconds_left = seconds_left % 86400;
-
-hours = parseInt(seconds_left / 3600);
-hours = hours + days * 24;
-seconds_left = seconds_left % 3600;
-
-
-minutes = parseInt(seconds_left / 60);
-seconds = parseInt(seconds_left % 60);
-
-if (hours.toString().length < 2) { hours="0" + hours; } if (minutes.toString().length < 2) { minutes="0" + minutes; } if (seconds.toString().length < 2) { seconds="0" + seconds; } }); }); } });
-
-
-
-
-
-            </script>
-
-            <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>       
-   
-
-    </body>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JS Paint</title>
+		
+		<link href="styles/normalize.css" rel="stylesheet" type="text/css">
+		<link href="styles/layout.css" rel="stylesheet" type="text/css">
+		<link href="styles/print.css" rel="stylesheet" type="text/css" media="print">
+		<link href="lib/os-gui/layout.css" rel="stylesheet" type="text/css">
+		<!-- <link href="lib/os-gui/windows-98.css" rel="stylesheet" type="text/css"> -->
+		<!-- <link href="lib/os-gui/windows-default.css" rel="stylesheet" type="text/css" title="Windows Default"> -->
+		<!-- <link href="lib/os-gui/peggys-pastels.css" rel="alternate stylesheet" type="text/css" title="Peggy's Pastels"> -->
+
+		<link rel="apple-touch-icon" href="images/icons/apple-icon-180x180.png">
+		<!-- Chrome will pick the largest image for some reason, instead of the most appropriate one. -->
+		<!-- <link rel="icon" type="image/png" sizes="192x192" href="images/icons/192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/icons/32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/icons/96x96.png"> -->
+		<!-- <link rel="icon" type="image/png" sizes="16x16" href="images/icons/16x16.png"> -->
+	
+		<link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="red">
+		<link rel="manifest" href="manifest.webmanifest">
+		<meta name="msapplication-TileColor" content="#008080">
+		<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#000080">
+
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<meta name="description" content="Classic MS Paint in the browser, with extra features" />
+		<meta property="og:image:width" content="279">
+		<meta property="og:image:height" content="279">
+		<meta property="og:description" content="Classic MS Paint in the browser, with extra features.">
+		<meta property="og:title" content="JS Paint">
+		<meta property="og:url" content="https://jspaint.app">
+		<meta property="og:image" content="https://jspaint.app/images/icons/og-image-279x279.jpg">
+		<meta name="twitter:title" content="JS Paint">
+		<meta name="twitter:description" content="Classic MS Paint in the browser, with extra features">
+		<meta name="twitter:image" content="https://jspaint.app/images/meta/twitter-card-plz-no-crop.png">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@isaiahodhner">
+		<meta name="twitter:creator" content="@isaiahodhner">
+
+		<script src="src/theme.js"></script>
+	</head>
+	<body>
+		
+		<div id="about-paint" style="display: none">
+			
+		</div>
+		<div id="news" hidden>
+			
+			<style>
+				body{
+					-webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+				}
+				#news {
+					background: white;
+					color: black;
+				}
+				.news-entry {
+					padding: 20px;
+					max-width: 563px;
+				}
+				.news-entry > h1 {
+					font-size: 1.3em;
+					margin: 0;
+					margin-bottom: 0.3em;
+				}
+				.news-entry > time {
+					font-size: 1.2em;
+					color: gray;
+				}
+				.news-entry > h2 {
+					font-size: 1.9em;
+					font-weight: normal;
+					margin: 0;
+					margin-bottom: 0.3em;
+					margin-top: 0.3em;
+				}
+				.news-entry .new {
+					color: green;
+				}
+				.news-entry .bad {
+					color: #d11a29;
+				}
+			</style>
+		</div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script>
+			window.jQuery || document.write('<script src="lib/jquery-3.4.1.min.js"><\/script>');
+		</script>
+		
+		<script src="lib/pep.js"></script>
+		<script src="lib/canvas.toBlob.js"></script>
+		<script src="lib/gif.js/gif.js"></script>
+		<script src="lib/palette.js"></script>
+		<script src="lib/FileSaver.js"></script>
+		<script src="lib/font-detective.js"></script>
+		<script src="lib/libtess.min.js"></script>
+		<script src="lib/os-gui/parse-theme.js"></script>
+		<script src="lib/os-gui/$Window.js"></script>
+		<script src="lib/os-gui/$MenuBar.js"></script>
+
+		<script src="src/helpers.js"></script>
+		<script src="src/storage.js"></script>
+		<script src="src/$Component.js"></script>
+		<script src="src/$ToolWindow.js"></script>
+		<script src="src/$ToolBox.js"></script>
+		<script src="src/$ColorBox.js"></script>
+		<script src="src/$FontBox.js"></script>
+		<script src="src/$Handles.js"></script>
+		<script src="src/OnCanvasObject.js"></script>
+		<script src="src/OnCanvasSelection.js"></script>
+		<script src="src/OnCanvasTextBox.js"></script>
+		<script src="src/OnCanvasHelperLayer.js"></script>
+		<script src="src/image-manipulation.js"></script>
+		<script src="src/tool-options.js"></script>
+		<script src="src/tools.js"></script>
+		<!--<script src="src/extra-tools.js"></script>-->
+		<script src="src/functions.js"></script>
+		<script src="src/manage-storage.js"></script>
+		<script src="src/imgur.js"></script>
+		<script src="src/help.js"></script>
+		<script src="src/simulate-random-gestures.js"></script>
+		<script src="src/menus.js"></script>
+		<script src="src/app.js"></script>
+		<script src="src/sessions.js"></script>
+		<script src="lib/konami.js"></script>
+		<script src="src/vaporwave-fun.js"></script>
+
+		<script>
+			if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
+				document.write(
+					'<style>body { text-align: center; }</style>' +
+					'<div className="not-supported">' +
+						'<h1 className="not-supported-header">Internet Explorer is not supported!</h1>' +
+						'<p className="not-supported-details">Try Chrome, Firefox, or Edge.</p>' +
+					'</div>'
+				);
+			}
+		</script>
+	<script src="cordova.js"></script>
+		
+	<script>
+
+
+document.addEventListener('deviceready', async () => {
+
+
+document.getElementById("haha").style.display = "none";
+
+}, false)
+
+  function taixuong(){
+	window.canvas2ImagePlugin.saveImageDataToLibrary(
+	  function(msg) {
+		alert("Save as library. !If black or none you need click button pencil before save image!");
+	  },
+	  function(err) {
+		alert("You Need Click button pencil on Tools before save as ..");
+	  },
+	  document.querySelector("canvas"),
+	  "png" // format is optional, defaults to 'png'
+	);
+  }
+
+
+
+	</script>
+	</body>
 </html>
